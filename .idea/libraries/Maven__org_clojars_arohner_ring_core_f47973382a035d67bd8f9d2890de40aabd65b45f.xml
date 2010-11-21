@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.clojars.arohner:ring-core:f47973382a035d67bd8f9d2890de40aabd65b45f">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/clojars/arohner/ring-core/f47973382a035d67bd8f9d2890de40aabd65b45f/ring-core-f47973382a035d67bd8f9d2890de40aabd65b45f.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/clojars/arohner/ring-core/f47973382a035d67bd8f9d2890de40aabd65b45f/ring-core-f47973382a035d67bd8f9d2890de40aabd65b45f-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/clojars/arohner/ring-core/f47973382a035d67bd8f9d2890de40aabd65b45f/ring-core-f47973382a035d67bd8f9d2890de40aabd65b45f-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
