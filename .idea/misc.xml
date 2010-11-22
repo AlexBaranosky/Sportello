@@ -26,13 +26,6 @@
     <option name="LOCALE" />
     <option name="OPEN_IN_BROWSER" value="true" />
   </component>
-  <component name="LeiningenProjectsManager">
-    <option name="projectFiles">
-      <list>
-        <option value="file://$PROJECT_DIR$/project.clj" />
-      </list>
-    </option>
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
