@@ -3,9 +3,10 @@
   (:use [clojure.contrib.http.agent :only [string http-agent]])
   (:use clojure.contrib.json))
 
+(def miles-per-meter 0.000621371192)
+
 (defn meters-to-miles [meters]
-  (let [miles-per-meter 0.000621371192]
-    (* meters miles-per-meter)))
+    (* meters miles-per-meter))
 
 (defn- directions-url [origin dest]
   (format "http://maps.googleapis.com/maps/api/directions/json?origin=%s&destination=%s&sensor=false" origin dest))
