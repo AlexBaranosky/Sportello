@@ -1,4 +1,4 @@
-(ns sportello.core
+(ns core
   (:use [compojure.core]
     [ring.adapter.jetty])
   (:require [compojure.route :as route]))
