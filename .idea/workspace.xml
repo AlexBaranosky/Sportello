@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="0463a8fb-e001-4621-bb94-b396f235f350" name="Default" comment="">
+    <list default="true" id="0463a8fb-e001-4621-bb94-b396f235f350" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sportello/facts.clj" />
+      <change type="DELETED" beforePath="C:\dev\sportellos\.idea\libraries\Maven__org_clojure_clojure_1_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\dev\sportellos\.idea\libraries\Maven__org_clojure_clojure_contrib_1_1_0.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="DELETED" beforePath="E:\dev\sportello\test\spartellos\test\core.clj" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="E:\dev\sportello\src\spartellos\address.clj" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
-      <change type="DELETED" beforePath="E:\dev\sportello\src\spartellos\number.clj" afterPath="" />
-      <change type="DELETED" beforePath="E:\dev\sportello\spartellos.iml" afterPath="" />
-      <change type="DELETED" beforePath="E:\dev\sportello\src\spartellos\core.clj" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportello.iml" afterPath="$PROJECT_DIR$/sportello.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/sportello/test/core.clj" afterPath="$PROJECT_DIR$/test/sportello/test/core.clj" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="sportello.iws" />
@@ -68,13 +67,21 @@
   <component name="FavoritesManager">
     <favorites_list name="sportello" />
   </component>
-  <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="core.clj" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="core.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sportello/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="286" selection-end="286" vertical-scroll-proportion="0.36065573">
+            <state line="11" column="0" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="facts.clj" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sportello/facts.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="20" selection-start="30" selection-end="30" vertical-scroll-proportion="0.03125">
               <folding />
             </state>
           </provider>
@@ -88,19 +95,21 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="GIT_EXECUTABLE" value="git.exe" />
     <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
+    <option name="UPDATE_CHANGES_POLICY" value="STASH" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/blah.clj" />
-        <option value="$PROJECT_DIR$/test/sportello/test/core.clj" />
-        <option value="$PROJECT_DIR$/project.clj" />
         <option value="$PROJECT_DIR$/src/sportello/adress.clj" />
         <option value="$PROJECT_DIR$/src/sportello/address.clj" />
         <option value="$PROJECT_DIR$/src/sportello/number.clj" />
+        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/sportello/core.clj" />
+        <option value="$PROJECT_DIR$/project.clj" />
+        <option value="$PROJECT_DIR$/test/sportello/test/core.clj" />
+        <option value="$PROJECT_DIR$/src/sportello/facts.clj" />
       </list>
     </option>
   </component>
@@ -115,34 +124,6 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="sportello" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="sportello" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </treeState>
   </component>
   <component name="ModuleEditorState">
     <option name="LAST_EDITED_MODULE_NAME" />
@@ -179,56 +160,34 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Favorites" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sportello" />
+              <option name="myItemId" value="sportellos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sportello" />
+              <option name="myItemId" value="sportellos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sportello" />
+              <option name="myItemId" value="sportellos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sportello" />
+              <option name="myItemId" value="sportellos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sportello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sportello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sportello" />
+              <option name="myItemId" value="sportellos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -242,15 +201,15 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sportello" />
+              <option name="myItemId" value="sportellos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sportello" />
+              <option name="myItemId" value="sportellos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,7 +234,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="Clojure Script.core">
+  <component name="RunManager" selected="Clojure Script.facts">
     <configuration default="false" name="blah" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="sportello" />
       <setting name="path" value="$PROJECT_DIR$/src/blah.clj" />
@@ -309,16 +268,27 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="facts" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="sportello" />
+      <setting name="path" value="$PROJECT_DIR$/src/sportello/facts.clj" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/sportello" />
+      <setting name="repl" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings">
           <MavenGeneralSettings>
             <option name="checksumPolicy" value="FAIL" />
             <option name="failureBehavior" value="FAST" />
-            <option name="localRepository" value="" />
             <option name="mavenHome" value="C:\Program Files\apache-maven-2.1.0" />
             <option name="mavenSettingsFile" value="" />
             <option name="nonRecursive" value="false" />
+            <option name="overriddenLocalRepository" value="" />
             <option name="pluginUpdatePolicy" value="DO_NOT_UPDATE" />
             <option name="printErrorStackTraces" value="false" />
             <option name="snapshotUpdatePolicy" value="ALWAYS_UPDATE" />
@@ -350,6 +320,7 @@
         </option>
       </MavenSettings>
       <method>
+        <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
@@ -363,21 +334,9 @@
       <setting name="workDir" value="" />
       <setting name="repl" value="false" />
       <method>
+        <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="LeiningenRunConfiguration" factoryName="Leiningen">
-      <LeiningenRunnerParameters>
-        <option name="goals">
-          <list />
-        </option>
-        <option name="workingDirectory" value="" />
-      </LeiningenRunnerParameters>
-      <method>
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -388,6 +347,7 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
       <method>
+        <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
@@ -404,6 +364,39 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
@@ -411,6 +404,7 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
+      <extension name="snapshooter" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -423,6 +417,7 @@
       <module name="" />
       <envs />
       <method>
+        <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
@@ -430,6 +425,7 @@
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
+      <extension name="snapshooter" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -446,16 +442,19 @@
         <value defaultName="moduleWithDependencies" />
       </option>
       <envs />
+      <patterns />
       <method>
+        <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Clojure Script.blah" />
       <item index="1" class="java.lang.String" itemvalue="Clojure Script.project" />
       <item index="2" class="java.lang.String" itemvalue="Clojure Script.core" />
+      <item index="3" class="java.lang.String" itemvalue="Clojure Script.facts" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -476,7 +475,7 @@
     <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <configuration useDefault="true">C:\Users\Matt\AppData\Roaming\Subversion</configuration>
+    <configuration useDefault="true">C:\Users\Alex and Paula\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
   </component>
@@ -489,26 +488,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1548" height="851" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2997685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.8352436" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.8352436" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1619632" sideWeight="0.7002315" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24983165" sideWeight="0.66045845" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15472779" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38194445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290993" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TestDox" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -525,6 +525,7 @@
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
@@ -543,25 +544,95 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/ring/ring-core/0.3.4/ring-core-0.3.4.jar!/ring/middleware/session.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.119101" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/sportello/test/core.clj">
+    <entry file="jar://$MAVEN_REPOSITORY$/ring/ring-core/0.3.4/ring-core-0.3.4.jar!/ring/middleware/params.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="9" selection-start="68" selection-end="88" vertical-scroll-proportion="0.118705034" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ring/ring-core/0.3.4/ring-core-0.3.4.jar!/ring/middleware/nested_params.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ring/ring-core/0.3.4/ring-core-0.3.4.jar!/ring/middleware/multipart_params.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ring/ring-core/0.3.4/ring-core-0.3.4.jar!/ring/middleware/keyword_params.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="43" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ring/ring-core/0.3.4/ring-core-0.3.4.jar!/ring/middleware/cookies.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/hiccup/hiccup/0.3.1/hiccup-0.3.1.jar!/hiccup/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ring/ring-jetty-adapter/0.3.4/ring-jetty-adapter-0.3.4.jar!/ring/adapter/jetty.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="21" selection-start="2495" selection-end="2495" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/compojure/compojure/0.5.3/compojure-0.5.3.jar!/compojure/route.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/compojure/compojure/0.5.3/compojure-0.5.3.jar!/compojure/response.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/compojure/compojure/0.5.3/compojure-0.5.3.jar!/compojure/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="35" selection-start="2923" selection-end="2923" vertical-scroll-proportion="0.021479713" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/clout/clout/0.3.1/clout-0.3.1.jar!/clout/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="50" selection-start="504" selection-end="504" vertical-scroll-proportion="0.32532346" />
+        <state line="8" column="31" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/sportello/test/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sportello/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="286" selection-end="286" vertical-scroll-proportion="0.36065573">
+        <state line="11" column="0" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sportello/facts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="20" selection-start="30" selection-end="30" vertical-scroll-proportion="0.03125">
           <folding />
         </state>
       </provider>

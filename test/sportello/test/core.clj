@@ -1,5 +1,9 @@
 (ns sportello.test.core
-  (:use [clojure.test] :reload))
+  (:use [clojure.test] :reload)
+  (:use midje.sweet))
 
-(deftest addition-still-works
-  (is (= 1 2)))
+
+(fact (+ 1 1) => 2)
+;
+;(deftest addition-still-works
+;  (is (= 1 2)))
