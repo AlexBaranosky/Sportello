@@ -5,8 +5,8 @@
 
 (def miles-per-meter 0.000621371192)
 
-(defn meters-to-miles [meters]
-    (* meters miles-per-meter))
+(defn- meters-to-miles [meters]
+  (* meters miles-per-meter))
 
 (defn- directions-url [origin dest]
   (format "http://maps.googleapis.com/maps/api/directions/json?origin=%s&destination=%s&sensor=false" origin dest))
