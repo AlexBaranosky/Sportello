@@ -31,19 +31,10 @@
         (recur dists more))
       dists)))
 
-(defn map-of-distances* [origin locations]
-  (loop [dists {} locs locations]
-    (if (seq locs)
-      (let [[loc & more] locs
-            dist (dist-in-miles origin loc)
-            dists (assoc dists loc dist)]
-        (recur dists more))
-      dists)))
-
-(defn relative-distance
+(defn relative-distances
   "Gives distance * frequency.
   frequencies are in days out of 365"
   [origin & locations-n-frequencies]
-  (let [loc-w-dists (map-of-distances* origin (take-nth 2 locations-n-frequencies))
+  (let [loc-w-dists (apply map-of-distances origin (take-nth 2 locations-n-frequencies))
         loc-w-freqs (apply hash-map locations-n-frequencies)]
     (multi-fmap (fn [d f] (* d f)) loc-w-dists loc-w-freqs)))
