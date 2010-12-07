@@ -1,5 +1,5 @@
 (defproject sportello "1.0.0-SNAPSHOT"
-  :description "a game where you are Sportello the chef and you have to whack someone with a loaf of Italian bread"
+  :description "Sportello is an app to tell you which places are good places to move to"
   :dependencies [[org.clojure/clojure "1.2.0"]
                  [org.clojure/clojure-contrib "1.2.0"]
                  [midje "0.8.0"]
