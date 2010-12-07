@@ -6,8 +6,8 @@
 (fact
   (multi-fmap #(+ %1 %1 %2 ) {:a 1 :b 2} {:a 3 :b 4}) => {:a 5 :b 8})
 
-;(fact
-;  (multi-fmap #(+ %1 %2 %3 ) {:a 1 :b 2} {:a 3 :b 4} {:a 5 :b 6}) => {:a 9 :b 12} )
+(fact
+  (multi-fmap #(+ %1 %2 %3 ) {:a 1 :b 2} {:a 3 :b 4} {:a 5 :b 6}) => {:a 9 :b 12} )
 
 ;(fact ;'only' throws if there are no items
 ;  (only []))

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0463a8fb-e001-4621-bb94-b396f235f350" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/facts/collection_utils_facts.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/facts/google_maps_facts.clj" />
-      <change type="DELETED" beforePath="C:\dev\sportellos\src\facts.clj" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/collection_utils.clj" afterPath="$PROJECT_DIR$/src/collection_utils.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/facts/collection_utils_facts.clj" afterPath="$PROJECT_DIR$/src/facts/collection_utils_facts.clj" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="sportello.iws" />
@@ -76,7 +74,7 @@
       <file leaf-file-name="core.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.2.0/clojure-1.2.0.jar!/clojure/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="534" column="6" selection-start="16887" selection-end="16887" vertical-scroll-proportion="0.0">
+            <state line="2078" column="6" selection-start="66365" selection-end="66365" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,7 +83,7 @@
       <file leaf-file-name="collection_utils.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/collection_utils.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
+            <state line="19" column="38" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,7 +101,7 @@
       <file leaf-file-name="collection_utils_facts.clj" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/facts/collection_utils_facts.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="5" selection-start="330" selection-end="330" vertical-scroll-proportion="0.42639595">
+            <state line="7" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="0.21319798">
               <folding />
             </state>
           </provider>
@@ -133,12 +131,12 @@
         <option value="$PROJECT_DIR$/src/map.clj" />
         <option value="$PROJECT_DIR$/src/mocking.clj" />
         <option value="$PROJECT_DIR$/project.clj" />
-        <option value="$PROJECT_DIR$/src/collection_utils.clj" />
         <option value="$PROJECT_DIR$/src/facts.clj" />
         <option value="$PROJECT_DIR$/src/google_maps.clj" />
         <option value="$PROJECT_DIR$/src/facts/facts.clj" />
-        <option value="$PROJECT_DIR$/src/facts/collection_utils_facts.clj" />
         <option value="$PROJECT_DIR$/src/facts/google_maps_facts.clj" />
+        <option value="$PROJECT_DIR$/src/collection_utils.clj" />
+        <option value="$PROJECT_DIR$/src/facts/collection_utils_facts.clj" />
       </list>
     </option>
   </component>
@@ -721,13 +719,6 @@
         <state line="11" column="0" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.2.0/clojure-1.2.0.jar!/clojure/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="534" column="6" selection-start="16887" selection-end="16887" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/google_maps.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="42" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.0">
@@ -740,13 +731,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/collection_utils.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/facts/google_maps_facts.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0">
@@ -754,9 +738,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.2.0/clojure-1.2.0.jar!/clojure/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2078" column="6" selection-start="66365" selection-end="66365" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collection_utils.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="38" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/facts/collection_utils_facts.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="330" selection-end="330" vertical-scroll-proportion="0.42639595">
+        <state line="7" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="0.21319798">
           <folding />
         </state>
       </provider>
