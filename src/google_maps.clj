@@ -1,6 +1,5 @@
 (ns google-maps
   (:use collection-utils)
-  (:use clojure.contrib.generic.functor)
   (:use [clojure.contrib.http.agent :only [string http-agent]])
   (:use clojure.contrib.json))
 
@@ -37,4 +36,4 @@
   [origin & locations-n-frequencies]
   (let [loc-w-dists (apply map-of-distances origin (take-nth 2 locations-n-frequencies))
         loc-w-freqs (apply hash-map locations-n-frequencies)]
-    (multi-fmap (fn [d f] (* d f)) loc-w-dists loc-w-freqs)))
+    (fmap (fn [d f] (* d f)) loc-w-dists loc-w-freqs)))

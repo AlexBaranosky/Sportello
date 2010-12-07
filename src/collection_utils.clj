@@ -13,7 +13,7 @@
     (first coll)
     (throw (RuntimeException. (format "should have precisely one item, but had: %s" (count coll))))))
 
-(defn multi-fmap
+(defn fmap
   ([f map1 map2]
     (into {} (for [[k v] map1] [k (f v (get map2 k))])))
   ([f map1 map2 map3]

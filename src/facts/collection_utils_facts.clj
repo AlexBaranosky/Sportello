@@ -4,13 +4,13 @@
   (:use midje.sweet))
 
 (fact
-  (multi-fmap #(+ %1 %1 %2 ) {:a 1 :b 2} {:a 3 :b 4}) => {:a 5 :b 8})
+  (fmap #(+ %1 %1 %2 ) {:a 1 :b 2} {:a 3 :b 4}) => {:a 5 :b 8})
 
 (fact
-  (multi-fmap #(+ %1 %2 %3 ) {:a 1 :b 2} {:a 3 :b 4} {:a 5 :b 6}) => {:a 9 :b 12} )
+  (fmap #(+ %1 %2 %3 ) {:a 1 :b 2} {:a 3 :b 4} {:a 5 :b 6}) => {:a 9 :b 12} )
 
 (fact
-  (multi-fmap #(+ %1 %2 %3 %4 ) {:a 1 :b 2} {:a 3 :b 4} {:a 5 :b 6} {:a 7 :b 8}) => {:a 16 :b 20} )
+  (fmap #(+ %1 %2 %3 %4 ) {:a 1 :b 2} {:a 3 :b 4} {:a 5 :b 6} {:a 7 :b 8}) => {:a 16 :b 20} )
 
 ;(fact ;'only' throws if there are no items
 ;  (only []))
