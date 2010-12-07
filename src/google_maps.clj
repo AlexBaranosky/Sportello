@@ -22,10 +22,10 @@
     (meters-to-miles distance)))
 
 (defn map-of-distances [origin & locations]
-  (loop [dists {} origin origin locations locations]
-    (if (seq locations)
-      (let [[loc & rst] locations
+  (loop [dists {} locs locations]
+    (if (seq locs)
+      (let [[loc & more] locs
             dist (dist-in-miles origin loc)
             dists (assoc dists loc dist)]
-        (recur dists origin rst))
+        (recur dists more))
       dists)))
