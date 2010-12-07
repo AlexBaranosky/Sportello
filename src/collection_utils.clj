@@ -13,10 +13,7 @@
     (first coll)
     (throw (RuntimeException. (format "should have precisely one item, but had: %s" (count coll))))))
 
-(defn fmap
-  ([f map1 map2]
-    (into {} (for [[k v] map1] [k (f v (get map2 k))])))
-  ([f map1 map2 map3]
-    (into {} (for [[k v] map1] [k (f v (get map2 k) (get map3 k))])))
-  ([f map1 map2 map3 map4]
-    (into {} (for [[k v] map1] [k (f v (get map2 k) (get map3 k) (get map4 k))]))))
+(defn fmap [f & maps]
+  (into {}
+    (for [k (keys (first maps))]
+      [k (apply f (map #(get % k) maps))])))
