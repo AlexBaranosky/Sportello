@@ -21,14 +21,11 @@
         distance (-> json :routes only :legs only :distance :value)]
     (meters-to-miles distance)))
 
+(defn distances [origin & locations]
+  (map #(dist-in-miles origin %) locations))
+
 (defn map-of-distances [origin & locations]
-  (loop [dists {} locs locations]
-    (if (seq locs)
-      (let [[loc & more] locs
-            dist (dist-in-miles origin loc)
-            dists (assoc dists loc dist)]
-        (recur dists more))
-      dists)))
+  (apply hash-map (interleave locations (apply distances origin locations))))
 
 (defn relative-distances
   "Gives distance * frequency.

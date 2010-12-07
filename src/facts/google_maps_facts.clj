@@ -7,6 +7,10 @@
   (dist-in-miles "NewYork,NY" "Boston,MA") => 219.061928254832)
 
 (fact ;gets distances to multiple locations from origin
+  (distances "Boston,MA" "Newport,RI" "LosAngeles,CA")
+  => [71.810625917056 2990.973960919152])
+
+(fact ;gets distances map to multiple locations from origin
   (map-of-distances "Boston,MA" "Newport,RI" "LosAngeles,CA")
   => {"LosAngeles,CA" 2990.973960919152, "Newport,RI" 71.810625917056})
 
