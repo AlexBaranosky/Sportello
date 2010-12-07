@@ -7,8 +7,16 @@
   (dist-in-miles "NewYork,NY" "Boston,MA") => 219.061928254832)
 
 (fact ;gets distances to multiple locations from origin
-  (map-of-distances "Boston,MA" "NewYork,NY" "LosAngeles,CA")
-  => {"LosAngeles,CA" 2990.973960919152, "NewYork,NY" 224.58218992456})
+  (map-of-distances "Boston,MA" "Newport,RI" "LosAngeles,CA")
+  => {"LosAngeles,CA" 2990.973960919152, "Newport,RI" 71.810625917056})
+
+(fact ;gets distances to multiple locations from origin
+  (map-of-distances* "Boston,MA" ["Newport,RI" "LosAngeles,CA"])
+  => {"LosAngeles,CA" 2990.973960919152, "Newport,RI" 71.810625917056})
+
+;(fact ;
+;  (map-of-how-close-you-should-be "Boston,MA" "Newport,RI" 12 "LosAngeles,CA" 1)
+;  => {"Newport,RI" 200, "LosAngeles,CA" 20})
 
 ;(fact ;'only' throws if there are no items
 ;  (only []))

@@ -22,6 +22,7 @@
     (meters-to-miles distance)))
 
 (defn map-of-distances [origin & locations]
+;  (print locations)
   (loop [dists {} locs locations]
     (if (seq locs)
       (let [[loc & more] locs
@@ -29,3 +30,23 @@
             dists (assoc dists loc dist)]
         (recur dists more))
       dists)))
+
+(defn map-of-distances* [origin locations]
+;  (print locations)
+  (loop [dists {} locs locations]
+    (if (seq locs)
+      (let [[loc & more] locs
+            dist (dist-in-miles origin loc)
+            dists (assoc dists loc dist)]
+        (recur dists more))
+      dists)))
+
+(defn map-of-how-close-you-should-be [origin & locations-n-frequencies]
+;  (print (take-nth 2 locations-n-frequencies))
+;  (print (take-nth 2 (next locations-n-frequencies)))
+  (let [dists (map-of-distances* origin (take-nth 2 locations-n-frequencies))
+        f #(/ 365 %)]
+    (println (map f (vals dists)))
+    (map f (vals dists))))
+
+(map-of-how-close-you-should-be "Boston,MA" "Newport,RI" 12 "LosAngeles,CA" 0)
