@@ -11,4 +11,4 @@
 (defn only [coll]
   (if (= 1 (count coll))
     (first coll)
-    (throw (RuntimeException. (str "should have precisely one item, but had" (count coll))))))
+    (throw (RuntimeException. (format "should have precisely one item, but had: %s" (count coll))))))

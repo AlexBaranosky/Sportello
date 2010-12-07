@@ -20,3 +20,12 @@
   (let [json (directions-json origin dest)
         distance (-> json :routes only :legs only :distance :value)]
     (meters-to-miles distance)))
+
+(defn map-of-distances [origin & locations]
+  (loop [dists {} origin origin locations locations]
+    (if (seq locations)
+      (let [[loc & rst] locations
+            dist (dist-in-miles origin loc)
+            dists (assoc dists loc dist)]
+        (recur dists origin rst))
+      dists)))
