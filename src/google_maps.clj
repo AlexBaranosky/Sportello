@@ -1,5 +1,6 @@
 (ns google-maps
   (:use collection-utils)
+  (:use clojure.contrib.generic.functor)
   (:use [clojure.contrib.http.agent :only [string http-agent]])
   (:use clojure.contrib.json))
 
@@ -22,7 +23,6 @@
     (meters-to-miles distance)))
 
 (defn map-of-distances [origin & locations]
-;  (print locations)
   (loop [dists {} locs locations]
     (if (seq locs)
       (let [[loc & more] locs
@@ -32,7 +32,6 @@
       dists)))
 
 (defn map-of-distances* [origin locations]
-;  (print locations)
   (loop [dists {} locs locations]
     (if (seq locs)
       (let [[loc & more] locs
@@ -41,12 +40,10 @@
         (recur dists more))
       dists)))
 
-(defn map-of-how-close-you-should-be [origin & locations-n-frequencies]
-;  (print (take-nth 2 locations-n-frequencies))
-;  (print (take-nth 2 (next locations-n-frequencies)))
-  (let [dists (map-of-distances* origin (take-nth 2 locations-n-frequencies))
-        f #(/ 365 %)]
-    (println (map f (vals dists)))
-    (map f (vals dists))))
-
-(map-of-how-close-you-should-be "Boston,MA" "Newport,RI" 12 "LosAngeles,CA" 0)
+(defn relative-distance
+  "Gives distance * frequency.
+  frequencies are in days out of 365"
+  [origin & locations-n-frequencies]
+  (let [loc-w-dists (map-of-distances* origin (take-nth 2 locations-n-frequencies))
+        loc-w-freqs (apply hash-map locations-n-frequencies)]
+    (multi-fmap (fn [d f] (* d f)) loc-w-dists loc-w-freqs)))
