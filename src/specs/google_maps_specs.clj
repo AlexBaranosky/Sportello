@@ -18,8 +18,4 @@
   (relative-distances "Boston,MA" "Newport,RI" 12 "LosAngeles,CA" 1)
   => {"LosAngeles,CA" 2990.973960919152, "Newport,RI" 861.727511004672})
 
-
-;(println "defspace macro expandsion:")
-;(println (macroexpand-1 `(defspec something-is-awesome ("Awesome") => ("Awesome"))))
-
 (evaluate-specs)
