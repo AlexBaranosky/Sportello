@@ -33,4 +33,4 @@
   [origin & locations-n-frequencies]
   (let [loc-w-dists (apply map-of-distances origin (take-nth 2 locations-n-frequencies))
         loc-w-freqs (apply hash-map locations-n-frequencies)]
-    (fmap (fn [d f] (* d f)) loc-w-dists loc-w-freqs)))
+    (fmap * loc-w-dists loc-w-freqs)))
