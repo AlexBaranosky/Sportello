@@ -1,4 +1,4 @@
-(ns collecton-utils-facts
+(ns collecton-utils-specs
   (:use google-maps)
   (:use collection-utils)
   (:use spec))

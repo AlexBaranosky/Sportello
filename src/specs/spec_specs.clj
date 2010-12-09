@@ -1,4 +1,4 @@
-(ns facts.specspecs
+(ns facts.spec_specs
   (:use clojure.test))
 
 (deftest defspec-exception0-msg-expands-properly

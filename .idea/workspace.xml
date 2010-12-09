@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0463a8fb-e001-4621-bb94-b396f235f350" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/specs/specspecs.clj" />
-      <change type="MOVED" beforePath="C:\dev\sportellos\src\facts\collection_utils_facts.clj" afterPath="C:\dev\sportellos\src\specs\collection_utils_specs.clj" />
-      <change type="MOVED" beforePath="C:\dev\sportellos\src\facts\google_maps_facts.clj" afterPath="C:\dev\sportellos\src\specs\google_maps_specs.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/spec.clj" afterPath="$PROJECT_DIR$/src/spec.clj" />
+      <change type="MOVED" beforePath="C:\dev\sportellos\src\specs\specspecs.clj" afterPath="$PROJECT_DIR$/src/specs/spec_specs.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/specs/collection_utils_specs.clj" afterPath="$PROJECT_DIR$/src/specs/collection_utils_specs.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/specs/google_maps_specs.clj" afterPath="$PROJECT_DIR$/src/specs/google_maps_specs.clj" />
     </list>
     <ignored path="sportello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,37 +81,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google_maps_facts.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/specs/google_maps_facts.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="72" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spec.clj" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="spec.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/spec.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="34" selection-start="220" selection-end="220" vertical-scroll-proportion="0.18694362">
+            <state line="14" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="collection_utils_facts.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/specs/collection_utils_facts.clj">
+      <file leaf-file-name="spec_specs.clj" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/specs/spec_specs.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
+            <state line="2" column="0" selection-start="44" selection-end="44" vertical-scroll-proportion="0.054462936">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="specspecs.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/specs/specspecs.clj">
+      <file leaf-file-name="collection_utils_specs.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/specs/collection_utils_specs.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="46" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="google_maps_specs.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/specs/google_maps_specs.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,9 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/sportello/core.clj" />
-        <option value="$PROJECT_DIR$/test/sportello/test/core.clj" />
-        <option value="$PROJECT_DIR$/src/sportello/facts.clj" />
         <option value="$PROJECT_DIR$/src/sportello/map.clj" />
         <option value="$PROJECT_DIR$/src/core.clj" />
         <option value="$PROJECT_DIR$/src/map.clj" />
@@ -149,6 +144,9 @@
         <option value="$PROJECT_DIR$/src/spec.clj" />
         <option value="$PROJECT_DIR$/src/facts/collection_utils_facts.clj" />
         <option value="$PROJECT_DIR$/src/facts/specspecs.clj" />
+        <option value="$PROJECT_DIR$/src/specs/collection_utils_specs.clj" />
+        <option value="$PROJECT_DIR$/src/specs/google_maps_specs.clj" />
+        <option value="$PROJECT_DIR$/src/specs/spec_specs.clj" />
       </list>
     </option>
   </component>
@@ -299,28 +297,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Clojure Script.specspecs">
-    <configuration default="false" name="facts" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="sportello" />
-      <setting name="path" value="$PROJECT_DIR$/src/facts/facts.clj" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
-      <setting name="repl" value="false" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="google_maps" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="sportello" />
-      <setting name="path" value="$PROJECT_DIR$/src/google_maps.clj" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src" />
-      <setting name="repl" value="false" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="collection_utils_facts" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="sportello" />
       <setting name="path" value="$PROJECT_DIR$/src/facts/collection_utils_facts.clj" />
@@ -345,10 +321,32 @@
     </configuration>
     <configuration default="false" name="specspecs" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="sportello" />
-      <setting name="path" value="$PROJECT_DIR$/src/facts/specspecs.clj" />
+      <setting name="path" value="$PROJECT_DIR$/src/specs/specspecs.clj" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src/facts" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/specs" />
+      <setting name="repl" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="collection_utils_specs" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="sportello" />
+      <setting name="path" value="$PROJECT_DIR$/src/specs/collection_utils_specs.clj" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/specs" />
+      <setting name="repl" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="google_maps_specs" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="sportello" />
+      <setting name="path" value="$PROJECT_DIR$/src/specs/google_maps_specs.clj" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/specs" />
       <setting name="repl" value="false" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -526,11 +524,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Clojure Script.facts" />
-      <item index="1" class="java.lang.String" itemvalue="Clojure Script.google_maps" />
-      <item index="2" class="java.lang.String" itemvalue="Clojure Script.collection_utils_facts" />
-      <item index="3" class="java.lang.String" itemvalue="Clojure Script.google_maps_facts" />
-      <item index="4" class="java.lang.String" itemvalue="Clojure Script.specspecs" />
+      <item index="0" class="java.lang.String" itemvalue="Clojure Script.collection_utils_facts" />
+      <item index="1" class="java.lang.String" itemvalue="Clojure Script.google_maps_facts" />
+      <item index="2" class="java.lang.String" itemvalue="Clojure Script.specspecs" />
+      <item index="3" class="java.lang.String" itemvalue="Clojure Script.collection_utils_specs" />
+      <item index="4" class="java.lang.String" itemvalue="Clojure Script.google_maps_specs" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -565,7 +563,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1863426" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -579,7 +577,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22699386" sideWeight="0.8352436" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32944787" sideWeight="0.8136574" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32944787" sideWeight="0.8136574" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4548611" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -686,27 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/specs/specspecs.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="46" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/specs/collection_utils_facts.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/specs/google_maps_facts.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="72" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/collection_utils.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
@@ -716,7 +693,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/spec.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="34" selection-start="220" selection-end="220" vertical-scroll-proportion="0.18694362">
+        <state line="14" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/specs/collection_utils_specs.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/specs/google_maps_specs.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/specs/spec_specs.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="44" selection-end="44" vertical-scroll-proportion="0.054462936">
           <folding />
         </state>
       </provider>
