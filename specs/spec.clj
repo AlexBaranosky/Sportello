@@ -1,4 +1,4 @@
-(ns facts.spec_specs
+(ns specs.spec
   (:use spec)
   (:use mocking)
   (:use collection-utils)

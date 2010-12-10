@@ -25,7 +25,7 @@
 
 (defn distances [origin & locations]
   (doall
-    (map (fn [dest] (dist-in-miles origin dest)) locations)))
+    (map #(dist-in-miles origin %) locations)))
 
 (defn map-of-distances [origin & locations]
   (apply hash-map (interleave locations (apply distances origin locations))))
@@ -34,6 +34,9 @@
   "Gives distance * frequency.
   frequencies are in days out of 365"
   [origin & locations-n-frequencies]
+  {:pre [(even? (count locations-n-frequencies)),
+         (every? string? (map first (partition 2 locations-n-frequencies)))
+         (every? number? (map second (partition 2 locations-n-frequencies)))]}
   (let [loc-w-dists (apply map-of-distances origin (take-nth 2 locations-n-frequencies))
         loc-w-freqs (apply hash-map locations-n-frequencies)]
     (fmap * loc-w-dists loc-w-freqs)))

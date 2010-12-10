@@ -3,9 +3,12 @@
     [ring.adapter.jetty])
   (:require [compojure.route :as route]))
 
-(defroutes example
-  (GET "/" [] "<h1>Sportello Busters!</h1>")
-  (route/files "/" {:root "public"})
-  (route/not-found "Page not found"))
+(def home-template "<h1>Sportello Busters!</h1>")
+(def page-not-found-template "<h1>Page not found</h1>")
 
-(run-jetty example {:port 8080})
+(defroutes sportello
+  (GET "/" [] home-template)
+  (route/files "/" {:root "public"})
+  (route/not-found page-not-found-template))
+
+(run-jetty sportello {:port 8080})

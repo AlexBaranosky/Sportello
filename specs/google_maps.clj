@@ -1,4 +1,4 @@
-(ns google-maps-specs
+(ns specs.google-maps
   (:use google-maps)
   (:use mocking)
   (:use spec)
