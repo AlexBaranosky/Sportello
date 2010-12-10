@@ -1,5 +1,6 @@
 (ns facts.spec_specs
   (:use spec)
+  (:use mocking)
   (:use collection-utils)
   (:use clojure.test)
   (:use clojure.walk))
@@ -11,6 +12,11 @@
   (is-macroexpanded
     `(deftest spec-name (is (= 1 (only [1]))))
     `(defspec spec-name (only [1]) => 1)))
+
+(deftest defspec-with-stubbing-expands-properly
+  (is-macroexpanded
+    `(deftest spec-name (is (stubbing [x 4] (= 1 (only [1])))))
+    `(defspec spec-name (stubbing [x 4] (onluy [1])) => 1)))
 
 (deftest defspec-exception-expands-properly
   (is-macroexpanded
