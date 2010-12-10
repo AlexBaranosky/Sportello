@@ -18,11 +18,15 @@
 
 (defn dist-in-miles [origin dest]
   (let [json (directions-json origin dest)
-        distance (-> json :routes only :legs only :distance :value)]
-    (meters-to-miles distance)))
+        status (-> json :status)]
+    (when (= status "OVER_QUERY_LIMIT")
+      (throw (RuntimeException. "Exceeded Google's query limit.")))
+    (let [distance (-> json :routes only :legs only :distance :value)]
+      (meters-to-miles distance))))
 
 (defn distances [origin & locations]
-  (map #(dist-in-miles origin %) locations))
+  (doall
+    (map (fn [dest] (dist-in-miles origin dest)) locations)))
 
 (defn map-of-distances [origin & locations]
   (apply hash-map (interleave locations (apply distances origin locations))))
