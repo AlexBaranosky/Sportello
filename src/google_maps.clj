@@ -11,7 +11,7 @@
 (defn- directions-url [origin dest]
   (format "http://maps.googleapis.com/maps/api/directions/json?origin=%s&destination=%s&sensor=false" origin dest))
 
-(defn- directions-json [origin dest]
+(defn directions-json [origin dest]
   (let [request-url (directions-url origin dest)
         response (string (http-agent request-url))]
     (read-json response true)))

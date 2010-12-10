@@ -24,4 +24,10 @@
     (relative-distances "Boston,MA" "Newport,RI" 2 "LosAngeles,CA" 1))
   => {"LosAngeles,CA" 365.0, "Newport,RI" 730.0})
 
+(defspec-exception throws-exception-if-over-query-limit
+  Exception ;#"Exceeded Google's query limit."
+;  (stubbing [directions-json "{ \"status\": \"OVER_QUERY_LIMIT\", \"routes\": [ ]}"]
+    (distances "Boston,MA" "Newport,RI" "LosAngeles,CA"))
+;)
+
 (evaluate-specs)

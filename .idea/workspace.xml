@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0463a8fb-e001-4621-bb94-b396f235f350" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/google_maps.clj" afterPath="$PROJECT_DIR$/src/google_maps.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/specs/google_maps_specs.clj" afterPath="$PROJECT_DIR$/src/specs/google_maps_specs.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/specs/spec_specs.clj" afterPath="$PROJECT_DIR$/src/specs/spec_specs.clj" />
     </list>
     <ignored path="sportello.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,7 +84,7 @@
       <file leaf-file-name="spec.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/spec.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="15" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
+            <state line="14" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,7 +111,7 @@
       <file leaf-file-name="google_maps_specs.clj" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/specs/google_maps_specs.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="16" selection-start="424" selection-end="424" vertical-scroll-proportion="0.34718102">
+            <state line="32" column="16" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.8545994">
               <folding />
             </state>
           </provider>
@@ -120,7 +120,7 @@
       <file leaf-file-name="google_maps.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/google_maps.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
+            <state line="13" column="5" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,12 +150,12 @@
         <option value="$PROJECT_DIR$/src/facts/google_maps_facts.clj" />
         <option value="$PROJECT_DIR$/src/facts/collection_utils_facts.clj" />
         <option value="$PROJECT_DIR$/src/facts/specspecs.clj" />
-        <option value="$PROJECT_DIR$/src/specs/collection_utils_specs.clj" />
         <option value="$PROJECT_DIR$/src/mocking.clj" />
         <option value="$PROJECT_DIR$/src/specs/spec_specs.clj" />
         <option value="$PROJECT_DIR$/src/spec.clj" />
         <option value="$PROJECT_DIR$/src/google_maps.clj" />
         <option value="$PROJECT_DIR$/src/specs/google_maps_specs.clj" />
+        <option value="$PROJECT_DIR$/src/specs/collection_utils_specs.clj" />
       </list>
     </option>
   </component>
@@ -601,7 +601,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26319018" sideWeight="0.6898148" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4027778" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25462964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TestDox" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -697,20 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spec.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="15" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/specs/collection_utils_specs.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="12" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mocking.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="10" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
@@ -732,16 +718,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/spec.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/specs/collection_utils_specs.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="12" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/google_maps.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
+        <state line="13" column="5" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/specs/google_maps_specs.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="424" selection-end="424" vertical-scroll-proportion="0.34718102">
+        <state line="32" column="16" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.8545994">
           <folding />
         </state>
       </provider>
