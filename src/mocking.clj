@@ -1,40 +1,42 @@
 ; courtesy of Amit Rathore
 ; http://s-expressions.com/2010/01/24/conjure-simple-mocking-and-stubbing-for-clojure-unit-tests/
+; and Clojure in Action
 
 (ns mocking
   (:use clojure.test))
 
-(def call-times (atom {}))
+(def mock-calls (atom {}))
 
-(defn stub-fn [function-name return-value]
-  (swap! call-times assoc function-name [])
+(defn stub-fn [the-function return-value]
+  (swap! mock-calls assoc the-function [])
   (fn [& args]
-    (swap! call-times update-in [function-name] conj args)
+    (swap! mock-calls update-in [the-function] conj args)
     return-value))
 
-(defn mock-fn [function-name]
-  (stub-fn function-name nil))
+(defn mock-fn [the-function]
+  (stub-fn the-function nil))
 
-(defn verify-call-times-for [fn-name number]
-  (is (= number (count (@call-times fn-name)))))
+(defmacro verify-call-times-for [fn-name number]
+  `(is (= ~number (count (@mock-calls ~(keyword fn-name))))))
 
-(defn verify-first-call-args-for [fn-name & args]
-  (is (= args (first (@call-times fn-name)))))
+(defmacro verify-first-call-args-for [fn-name & args]
+  `(verify-nth-call-args-for 1 ~fn-name ~@args))
 
-(defn verify-nth-call-args-for [n fn-name & args]
-  (is (= args (nth (@call-times fn-name) (dec n)))))
+(defmacro verify-nth-call-args-for [n fn-name & args]
+  `(is (= '~args (nth (@mock-calls ~(keyword fn-name)) (dec ~n)))))
 
 (defn clear-calls []
-  (reset! call-times {}))
+  (reset! mock-calls {}))
 
 (defmacro mocking [fn-names & body]
-  (let [mock-fns (map #(list 'mock-fn %) fn-names)]
-    `(binding [~@(interleave fn-names mock-fns)]
+  (let [mocks (map #(list 'mock-fn (keyword %)) fn-names)]
+    `(binding [~@(interleave fn-names mocks)]
       ~@body)))
 
 (defmacro stubbing [stub-forms & body]
-  (let [pairs-of-fn-w-stub-result (partition 2 stub-forms)
-        fn-names (map first pairs-of-fn-w-stub-result)
-        stub-fns (map #(list 'stub-fn (first %) (last %)) pairs-of-fn-w-stub-result)]
-    `(binding [~@(interleave fn-names stub-fns)]
+  (let [stub-pairs (partition 2 stub-forms)
+        real-fns (map first stub-pairs)
+        returns (map last stub-pairs)
+        stub-fns (map #(list 'stub-fn %1 %2) real-fns returns)]
+    `(binding [~@(interleave real-fns stub-fns)]
       ~@body)))
