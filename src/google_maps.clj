@@ -21,8 +21,7 @@
         status (-> json :status)]
     (when (= status "OVER_QUERY_LIMIT")
       (throw (RuntimeException. "Exceeded Google's query limit.")))
-    (let [distance (-> json :routes only :legs only :distance :value)]
-      (meters-to-miles distance))))
+    (-> json :routes only :legs only :distance :value meters-to-miles)))
 
 (defn distances [origin & locations]
   (doall
