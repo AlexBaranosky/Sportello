@@ -25,13 +25,13 @@
   (reset! call-times {}))
 
 (defmacro mocking [fn-names & body]
-  (let [mocks (map #(list 'mock-fn %) fn-names)]
-    `(binding [~@(interleave fn-names mocks)]
+  (let [mock-fns (map #(list 'mock-fn %) fn-names)]
+    `(binding [~@(interleave fn-names mock-fns)]
       ~@body)))
 
 (defmacro stubbing [stub-forms & body]
-  (let [stub-pairs (partition 2 stub-forms)
-        fn-names (map first stub-pairs)
-        stubs (map #(list 'stub-fn (first %) (last %)) stub-pairs)]
-    `(binding [~@(interleave fn-names stubs)]
+  (let [pairs-of-fn-w-stub-result (partition 2 stub-forms)
+        fn-names (map first pairs-of-fn-w-stub-result)
+        stub-fns (map #(list 'stub-fn (first %) (last %)) pairs-of-fn-w-stub-result)]
+    `(binding [~@(interleave fn-names stub-fns)]
       ~@body)))
