@@ -1,6 +1,8 @@
 (ns google-maps-specs
   (:use google-maps)
+  (:use mocking)
   (:use spec)
+  (:use clojure.walk)
   (:use collection-utils))
 
 (defspec distance-in-miles-between-two-locations
@@ -9,6 +11,11 @@
 (defspec distances-in-miles-to-multiple-locations-from-origin
   (distances "Boston,MA" "Newport,RI" "LosAngeles,CA")
   => [71.810625917056 2990.973960919152])
+
+;(println (macroexpand-all `(defspec2 distances-in-miles-to-multiple-locations-from-origin
+;  (stubbing [dist-in-miles 2]
+;    (distances "Boston,MA" "Newport,RI" "LosAngeles,CA"))
+;  => [71.810625917056 2990.973960919152])))
 
 (defspec distances-map-to-multiple-locations-from-origin
   (map-of-distances "Boston,MA" "Newport,RI" "LosAngeles,CA")

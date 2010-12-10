@@ -4,13 +4,16 @@
   (:use spec))
 
 (defspec maps-keys-of-two-maps-using-given-function
-  (fmap #(+ %1 %1 %2) {:a 1 :b 2} {:a 3 :b 4}) => {:a 5 :b 8})
+  (fmap #(+ %1 %1 %2) {:a 1 :b 2} {:a 3 :b 4})
+  => {:a 5 :b 8})
 
 (defspec maps-keys-of-three-maps-using-given-function
-  (fmap #(+ %1 %2 %3) {:a 1 :b 2} {:a 3 :b 4} {:a 5 :b 6}) => {:a 9 :b 12})
+  (fmap #(+ %1 %2 %3) {:a 1 :b 2} {:a 3 :b 4} {:a 5 :b 6})
+  => {:a 9 :b 12})
 
 (defspec maps-keys-of-any-number-of-maps-using-given-function
-  (fmap #(+ %1 %2 %3 %4) {:a 1 :b 2} {:a 3 :b 4} {:a 5 :b 6} {:a 7 :b 8}) => {:a 16 :b 20})
+  (fmap #(+ %1 %2 %3 %4) {:a 1 :b 2} {:a 3 :b 4} {:a 5 :b 6} {:a 7 :b 8})
+  => {:a 16 :b 20})
 
 (defspec-exception throws-when-no-items
   RuntimeException
@@ -20,9 +23,9 @@
   RuntimeException #"should have precisely one item, but had: 0"
   (only []))
 
-(defspec-exception-msg throws-when-no-more-than-one-item
-  RuntimeException #"should have precisely one item, but had: 3"
-  (only [1 2 3]))
+(defspec-exception-msg throws-when-more-than-one-item
+  RuntimeException #"should have precisely one item, but had: 2"
+  (only [1 2]))
 
 (defspec gets-values-of-distance-for-nested-nested-hash-map
   (values-of :distance {:goat "al" :distance 35})

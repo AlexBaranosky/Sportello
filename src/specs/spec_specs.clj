@@ -1,13 +1,29 @@
 (ns facts.spec_specs
-  (:use clojure.test))
+  (:use spec)
+  (:use collection-utils)
+  (:use clojure.test)
+  (:use clojure.walk))
 
-(deftest defspec-exception0-msg-expands-properly
-  (is
-    (= " (facts.specspecs/defspec-exception-msg facts.specspecs/throws-when-no-items java.lang.RuntimeException #\" should have precisely one item, but had: 0 \" (facts.specspecs/only [])) 5))")))
-(macroexpand-1 `(defspec-exception-msg throws-when-no-items
-  RuntimeException #" should have precisely one item, but had: 0 "
-  (only [])))
+(defn is-macroexpanded [expected actual]
+  (is (= (macroexpand-all expected) (macroexpand-all actual))))
+
+(deftest defspec-expands-properly
+  (is-macroexpanded
+    `(deftest spec-name (is (= 1 (only [1]))))
+    `(defspec spec-name (only [1]) => 1)))
+
+(deftest defspec-exception-expands-properly
+  (is-macroexpanded
+    `(deftest spec-name (is (~'thrown-with-msg? Exception #"message" (only []))))
+    `(defspec-exception spec-name
+      Exception
+      (only []))))
+
+(deftest defspec-exception-msg-expands-properly
+  (is-macroexpanded
+    `(deftest spec-name (is (~'thrown-with-msg? Exception #"message" (only []))))
+    `(defspec-exception-msg spec-name
+      Exception #"message"
+      (only []))))
 
 (run-tests)
-
-
