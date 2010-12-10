@@ -1,3 +1,6 @@
+; courtesy of Amit Rathore
+; http://s-expressions.com/2010/01/24/conjure-simple-mocking-and-stubbing-for-clojure-unit-tests/
+
 (ns mocking
   (:use clojure.test))
 
