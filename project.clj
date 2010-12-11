@@ -6,5 +6,5 @@
                  [clojurecheck "2.0.2"]
                  [org.clojars.arohner/ring-core "f47973382a035d67bd8f9d2890de40aabd65b45f"]
                  [compojure "0.5.3"]
-                 [ring/ring-jetty-adapter "0.3.4"]
-                 [org.bituf/clj-stringtemplate "0.2"]])
+                 [stringtemplate-clj "0.1.0"]
+                 [ring/ring-jetty-adapter "0.3.4"]])
