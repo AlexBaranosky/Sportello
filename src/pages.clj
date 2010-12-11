@@ -2,10 +2,7 @@
   (:use utilities)
   (:use stringtemplate-clj.core))
 
-(defn template [#^String txt #^java.util.Map context]
-  (-> (StringTemplate. txt) (.setAttributes context) str))
-
-(defn template [#^String filename #^java.util.Map attributes]
+(defn template [filename attributes]
   (->
     (load-template template-dir filename)
     (update-template attributes)))

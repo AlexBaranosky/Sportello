@@ -1,15 +1,14 @@
 (ns server
-  (:require [pages :as pages])
-  (:require [compojure.route :as route])
-  (:use compojure.core)
-  (:use ring.adapter.jetty))
+  (:require
+    [pages :as pages]
+    (compojure [route :as route])
+    (ring.adapter [jetty :as jetty]))
+  (:use (compojure [core :only [defroutes GET ANY]])))
 
-(defroutes routes
-  (route/files "/" {:root "public"})
+(defroutes all-routes
   (GET "/" []
     (pages/home-page))
-
-  (route/not-found
+  (ANY "/*" []
     (pages/not-found-404)))
 
-(run-jetty routes {:port 8080})
+(jetty/run-jetty all-routes {:port 8080})
