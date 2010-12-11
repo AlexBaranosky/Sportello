@@ -1,8 +1,6 @@
 (ns fact.collection-utils
-  (:use google-maps)
   (:use midje.sweet)
-  (:use collection-utils)
-  (:use spec))
+  (:use collection-utils))
 
 (fact "maps keys of two maps using given function"
   (fmap #(+ %1 %1 %2) {:a 1 :b 2} {:a 3 :b 4})

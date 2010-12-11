@@ -1,8 +1,6 @@
 (ns fact.google-maps
   (:use google-maps)
-  (:use mocking)
-  (:use midje.sweet)
-  (:use spec))
+  (:use midje.sweet))
 
 (fact "distance in miles between two locations"
   (dist-in-miles "NewYork,NY" "Boston,MA") => 219.061928254832)
