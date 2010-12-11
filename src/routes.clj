@@ -7,18 +7,18 @@
   )
 (defn template [filename attributes]
   (->
-    (path-combine template-dir "layout")
-    (load-template filename)
+    (load-template template-dir filename)
     (update-template attributes)))
 
 (def home-template
-  (template "layout" {"body" "hello Alex!!!"}))
+  (template "layout" {"user" "Mario"}))
 
-(def page-not-found-template "<h1>Page not found</h1>")
+(def page-not-found-template
+  (template "not-found" {}))
 
 (defroutes sportello
   (GET "/" [] (str home-template))
   (route/files "/" {:root "public"})
-  (route/not-found page-not-found-template))
+  (route/not-found (str page-not-found-template)))
 
 (run-jetty sportello {:port 8080})

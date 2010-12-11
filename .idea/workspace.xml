@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0463a8fb-e001-4621-bb94-b396f235f350" name="Default" comment="updated mocking code to reflect improvements from Clojure in Action">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/string-template.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utilities.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/layout/layout.st" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/partials/footer.st" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/partials/header.st" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/home.st" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/layout.st" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/not-found.st" />
+      <change type="DELETED" beforePath="C:\dev\sportellos\src\string-template.clj" afterPath="" />
+      <change type="DELETED" beforePath="C:\dev\sportellos\templates\layout\layout.st" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fact/google_maps.clj" afterPath="$PROJECT_DIR$/fact/google_maps.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportello.iml" afterPath="$PROJECT_DIR$/sportello.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes.clj" afterPath="$PROJECT_DIR$/src/routes.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates.clj" afterPath="$PROJECT_DIR$/src/templates.clj" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="sportello.iws" />
@@ -71,55 +67,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="templates.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates.clj">
+      <file leaf-file-name="layout.st" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/layout.st">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+            <state line="3" column="27" selection-start="91" selection-end="91" vertical-scroll-proportion="0.089108914">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.st" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/layout/layout.st">
+      <file leaf-file-name="home.st" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/home.st">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="41" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+            <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/stringtemplate-clj/stringtemplate-clj/0.1.0/stringtemplate-clj-0.1.0.jar!/stringtemplate_clj/core.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="6" selection-start="110" selection-end="110" vertical-scroll-proportion="-2.16">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="google_maps.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/google_maps.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="66" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utilities.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utilities.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="20" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.clj" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/routes.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.76731795">
+            <state line="13" column="27" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -139,9 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/mocking.clj" />
-        <option value="$PROJECT_DIR$/specs/collection_utils.clj" />
-        <option value="$PROJECT_DIR$/src/spec.clj" />
         <option value="$PROJECT_DIR$/specs/google_maps.clj" />
         <option value="$PROJECT_DIR$/fact/spec.clj" />
         <option value="$PROJECT_DIR$/src/google_maps.clj" />
@@ -154,7 +120,10 @@
         <option value="$PROJECT_DIR$/src/string-template.clj" />
         <option value="$PROJECT_DIR$/src/utilities.clj" />
         <option value="$PROJECT_DIR$/templates/layout/layout.st" />
+        <option value="$PROJECT_DIR$/templates/layout.st" />
         <option value="$PROJECT_DIR$/src/routes.clj" />
+        <option value="$PROJECT_DIR$/templates/home.st" />
+        <option value="$PROJECT_DIR$/templates/not-found.st" />
       </list>
     </option>
   </component>
@@ -282,10 +251,6 @@
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -301,7 +266,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -657,9 +622,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22699386" sideWeight="0.8352436" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25398773" sideWeight="0.6851852" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.7349537" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3148148" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2650463" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TestDox" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -705,18 +670,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/collection_utils.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/bituf/clj-stringtemplate/0.2/clj-stringtemplate-0.2.jar!/org/bituf/clj_stringtemplate/internal.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.27741936">
@@ -752,13 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/string-template.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.2.0/clojure-1.2.0.jar!/clojure/core.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4715" column="7" selection-start="155039" selection-end="155039" vertical-scroll-proportion="0.33261803">
@@ -780,20 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout/layout.st">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="41" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/google_maps.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="66" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.0">
@@ -803,14 +735,42 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/stringtemplate-clj/stringtemplate-clj/0.1.0/stringtemplate-clj-0.1.0.jar!/stringtemplate_clj/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="110" selection-end="110" vertical-scroll-proportion="-2.16">
+        <state line="3" column="6" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0929432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/not-found.st">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="27" selection-start="210" selection-end="210" vertical-scroll-proportion="0.17821783">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.76731795">
+        <state line="13" column="27" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.st">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.st">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="27" selection-start="91" selection-end="91" vertical-scroll-proportion="0.089108914">
           <folding />
         </state>
       </provider>
