@@ -1,7 +1,7 @@
 <html>
 <body>
-    <div class="header">$partials/header()$</div>
+    $partials/header()$
     <div class="content">$home()$</div>
-    <div class="footer">$partials/footer()$</div>
+    $partials/footer()$
 </body>
 </html>

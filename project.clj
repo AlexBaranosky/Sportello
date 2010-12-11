@@ -7,4 +7,5 @@
                  [org.clojars.arohner/ring-core "f47973382a035d67bd8f9d2890de40aabd65b45f"]
                  [compojure "0.5.3"]
                  [stringtemplate-clj "0.1.0"]
+                 [org.clojars.sids/congomongo "0.1.3-SNAPSHOT"]
                  [ring/ring-jetty-adapter "0.3.4"]])

@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0463a8fb-e001-4621-bb94-b396f235f350" name="Default" comment="updated mocking code to reflect improvements from Clojure in Action">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/home.st" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/layout.st" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/not-found.st" />
-      <change type="DELETED" beforePath="C:\dev\sportellos\src\string-template.clj" afterPath="" />
-      <change type="DELETED" beforePath="C:\dev\sportellos\templates\layout\layout.st" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server.clj" />
+      <change type="DELETED" beforePath="C:\dev\sportellos\src\routes.clj" afterPath="" />
+      <change type="DELETED" beforePath="C:\dev\sportellos\src\templates.clj" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes.clj" afterPath="$PROJECT_DIR$/src/routes.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fact/google_maps.clj" afterPath="$PROJECT_DIR$/fact/google_maps.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportello.iml" afterPath="$PROJECT_DIR$/sportello.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.st" afterPath="$PROJECT_DIR$/templates/layout.st" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="sportello.iws" />
@@ -67,28 +69,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="layout.st" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout.st" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/layout.st">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="27" selection-start="91" selection-end="91" vertical-scroll-proportion="0.089108914">
+            <state line="6" column="7" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.st" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home.st">
+      <file leaf-file-name="pages.clj" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
+            <state line="9" column="11" selection-start="257" selection-end="257" vertical-scroll-proportion="0.19401197">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/routes.clj">
+      <file leaf-file-name="collection_utils.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fact/collection_utils.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="27" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="google_maps.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fact/google_maps.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="18" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="18" selection-start="224" selection-end="224" vertical-scroll-proportion="-6.48">
               <folding />
             </state>
           </provider>
@@ -108,22 +128,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/specs/google_maps.clj" />
-        <option value="$PROJECT_DIR$/fact/spec.clj" />
         <option value="$PROJECT_DIR$/src/google_maps.clj" />
         <option value="$PROJECT_DIR$/fact/collection_utils.clj" />
-        <option value="$PROJECT_DIR$/fact/google_maps.clj" />
-        <option value="$PROJECT_DIR$/project.clj" />
-        <option value="$PROJECT_DIR$/src/templates.clj" />
         <option value="$PROJECT_DIR$/templates/partials/header.st" />
         <option value="$PROJECT_DIR$/templates/partials/footer.st" />
         <option value="$PROJECT_DIR$/src/string-template.clj" />
         <option value="$PROJECT_DIR$/src/utilities.clj" />
         <option value="$PROJECT_DIR$/templates/layout/layout.st" />
-        <option value="$PROJECT_DIR$/templates/layout.st" />
-        <option value="$PROJECT_DIR$/src/routes.clj" />
         <option value="$PROJECT_DIR$/templates/home.st" />
         <option value="$PROJECT_DIR$/templates/not-found.st" />
+        <option value="$PROJECT_DIR$/src/templates.clj" />
+        <option value="$PROJECT_DIR$/project.clj" />
+        <option value="$PROJECT_DIR$/templates/layout.st" />
+        <option value="$PROJECT_DIR$/src/routes.clj" />
+        <option value="$PROJECT_DIR$/fact/google_maps.clj" />
+        <option value="$PROJECT_DIR$/src/server.clj" />
+        <option value="$PROJECT_DIR$/src/pages.clj" />
       </list>
     </option>
   </component>
@@ -138,6 +158,20 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="sportello" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ModuleEditorState">
     <option name="LAST_EDITED_MODULE_NAME" />
@@ -174,8 +208,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Favorites" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -183,50 +218,6 @@
               <option name="myItemId" value="sportellos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sportellos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: stringtemplate-clj:stringtemplate-clj:0.1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stringtemplate-clj-0.1.0.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sportellos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: stringtemplate-clj:stringtemplate-clj:0.1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stringtemplate-clj-0.1.0.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stringtemplate_clj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -249,24 +240,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sportellos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sportellos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -284,39 +257,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sportellos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sportellos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fact" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="213" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="232" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="232" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="228" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="228" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="234" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="908" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="903" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="908" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="229" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="227" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -333,26 +291,15 @@
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\sportellos\src\facts" />
     </key>
   </component>
-  <component name="RunManager" selected="Clojure Script.routes">
-    <configuration default="false" name="collection_utils" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="sportello" />
-      <setting name="path" value="$PROJECT_DIR$/fact/collection_utils.clj" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/fact" />
-      <setting name="repl" value="false" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Clojure Script.server">
     <configuration default="false" name="google_maps" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="sportello" />
       <setting name="path" value="$PROJECT_DIR$/fact/google_maps.clj" />
@@ -389,6 +336,17 @@
     <configuration default="false" name="string-template" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="sportello" />
       <setting name="path" value="$PROJECT_DIR$/src/string-template.clj" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src" />
+      <setting name="repl" value="false" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="server" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="sportello" />
+      <setting name="path" value="$PROJECT_DIR$/src/server.clj" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workDir" value="$PROJECT_DIR$/src" />
@@ -470,6 +428,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -495,24 +471,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -569,11 +527,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Clojure Script.collection_utils" />
-      <item index="1" class="java.lang.String" itemvalue="Clojure Script.google_maps" />
-      <item index="2" class="java.lang.String" itemvalue="Clojure Script.templates" />
-      <item index="3" class="java.lang.String" itemvalue="Clojure Script.routes" />
-      <item index="4" class="java.lang.String" itemvalue="Clojure Script.string-template" />
+      <item index="0" class="java.lang.String" itemvalue="Clojure Script.google_maps" />
+      <item index="1" class="java.lang.String" itemvalue="Clojure Script.templates" />
+      <item index="2" class="java.lang.String" itemvalue="Clojure Script.routes" />
+      <item index="3" class="java.lang.String" itemvalue="Clojure Script.string-template" />
+      <item index="4" class="java.lang.String" itemvalue="Clojure Script.server" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -606,27 +564,47 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34837964" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15705521" sideWeight="0.8352436" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39930555" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22337963" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298611" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22699386" sideWeight="0.8352436" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23006135" sideWeight="0.7349537" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.7349537" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.8275463" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2650463" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1724537" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TestDox" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -670,107 +648,90 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bituf/clj-stringtemplate/0.2/clj-stringtemplate-0.2.jar!/org/bituf/clj_stringtemplate/internal.clj">
+    <entry file="file://$PROJECT_DIR$/templates/not-found.st">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.27741936">
-          <folding />
-        </state>
+        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bituf/clj-stringtemplate/0.2/clj-stringtemplate-0.2.jar!/org/bituf/clj_stringtemplate.clj">
+    <entry file="file://$PROJECT_DIR$/templates/home.st">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="38" selection-start="734" selection-end="734" vertical-scroll-proportion="0.60967743">
-          <folding />
-        </state>
+        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/partials/header.st">
+    <entry file="file://$PROJECT_DIR$/src/collection_utils.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/compojure/compojure/0.5.3/compojure-0.5.3.jar!/compojure/route.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojars/sids/congomongo/0.1.3-SNAPSHOT/congomongo-0.1.3-SNAPSHOT.jar!/somnium/congomongo.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="390" column="11" selection-start="16573" selection-end="16573" vertical-scroll-proportion="8.540146" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/partials/footer.st">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="32" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/stringtemplate/3.2/stringtemplate-3.2.jar!/org/antlr/stringtemplate/StringTemplateGroup.class">
+    <entry file="file://$PROJECT_DIR$/templates/partials/header.st">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="162" selection-end="162" vertical-scroll-proportion="0.19354838">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.2.0/clojure-1.2.0.jar!/clojure/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4715" column="7" selection-start="155039" selection-end="155039" vertical-scroll-proportion="0.33261803">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.2.0/clojure-1.2.0.jar!/clojure/lang/Compiler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1503" column="0" selection-start="78651" selection-end="78651" vertical-scroll-proportion="-14.32">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utilities.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="20" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/google_maps.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="66" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.0">
+        <state line="28" column="6" selection-start="944" selection-end="944" vertical-scroll-proportion="0.43564355" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.32673267" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fact/google_maps.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="18" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fact/collection_utils.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.st">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="7" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="18" selection-start="224" selection-end="224" vertical-scroll-proportion="-6.48">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/stringtemplate-clj/stringtemplate-clj/0.1.0/stringtemplate-clj-0.1.0.jar!/stringtemplate_clj/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0929432">
+        <state line="3" column="6" selection-start="110" selection-end="110" vertical-scroll-proportion="0.06467066">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/not-found.st">
+    <entry file="file://$PROJECT_DIR$/src/pages.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="27" selection-start="210" selection-end="210" vertical-scroll-proportion="0.17821783">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.st">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout.st">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="27" selection-start="91" selection-end="91" vertical-scroll-proportion="0.089108914">
+        <state line="9" column="11" selection-start="257" selection-end="257" vertical-scroll-proportion="0.19401197">
           <folding />
         </state>
       </provider>
