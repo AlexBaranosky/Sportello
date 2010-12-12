@@ -21,7 +21,9 @@
         status (-> json :status)]
     (when (= status "OVER_QUERY_LIMIT")
       (throw (RuntimeException. "Exceeded Google's query limit.")))
-    (-> json :routes only :legs only :distance :value meters-to-miles)))
+    (if (= status "NOT_FOUND")
+      []
+    (-> json :routes only :legs only :distance :value meters-to-miles))))
 
 (defn distances [origin & locations]
   (map #(dist-in-miles origin %) locations))
