@@ -2,24 +2,29 @@
   (:use google-maps)
   (:use midje.sweet))
 
-(fact "retrieves distance in miles between two locations"
-  (dist-in-miles "NewYork,NY" "Boston,MA") => 219.061928254832)
+;(fact "retrieves distance in miles between two locations"
+;  (dist-in-miles "NewYork,NY" "Boston,MA") => 219.061928254832)
 
-(fact "returns empty seq when google can't find origin"
-  (dist-in-miles "QWERTY" "Boston,MA") => '()
+(fact "returns nil when google can't find origin"
+  (dist-in-miles "QWERTY" "Boston,MA") => nil
   (provided (directions-json "QWERTY" "Boston,MA") => {:status "NOT_FOUND" :routes []} ))
 
-(fact "returns empty seq when google can't find destination"
-  (dist-in-miles "Boston,MA" "QWERTY") => '()
+(fact "returns nil when google can't find destination"
+  (dist-in-miles "Boston,MA" "QWERTY") => nil
   (provided (directions-json "Boston,MA" "QWERTY") => {:status "NOT_FOUND" :routes []} ))
 
-(fact "throws if Google has exceeded its query limit"
+(fact "throws exception when Google has exceeded its query limit"
   (dist-in-miles "Boston,MA" "Newport,RI") => (throws RuntimeException "Exceeded Google's query limit.")
   (provided (directions-json "Boston,MA" "Newport,RI") => {:status "OVER_QUERY_LIMIT" :routes []} ))
 
 (fact "retrieves distances in miles to multiple locations from origin"
  (distances "Boston,MA" "Albany,NY" "LosAngeles,CA") => (in-any-order [3.0, 2.0])
  (provided (dist-in-miles "Boston,MA" "Albany,NY") => 2.0)
+ (provided (dist-in-miles "Boston,MA" "LosAngeles,CA") => 3.0))
+
+(fact "filters out unfound locations when retrieving distances in miles to multiple locations from origin"
+ (distances "Boston,MA" "QWERTY" "LosAngeles,CA") => [3.0]
+ (provided (dist-in-miles "Boston,MA" "QWERTY") => nil)
  (provided (dist-in-miles "Boston,MA" "LosAngeles,CA") => 3.0))
 
 (fact "converts distances from origin to a map keyed by destination"

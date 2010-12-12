@@ -21,11 +21,11 @@
         status (-> json :status)]
     (case status
       "OVER_QUERY_LIMIT" (throw (RuntimeException. "Exceeded Google's query limit."))
-      "NOT_FOUND" []
+      "NOT_FOUND" nil
       (-> json :routes only :legs only :distance :value meters-to-miles))))
 
 (defn distances [origin & locations]
-  (map #(dist-in-miles origin %) locations))
+  (remove nil? (map #(dist-in-miles origin %) locations)))
 
 (defn map-of-distances [origin & locations]
   (apply hash-map (interleave locations (apply distances origin locations))))
