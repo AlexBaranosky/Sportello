@@ -6,4 +6,4 @@
   (seq (.split #"\r?\n" string)))
 
 (defn remove-whitespace [s]
-  (str/replace (.trim s) #" " ""))
+  (str/replace s #" " ""))
