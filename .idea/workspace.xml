@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0463a8fb-e001-4621-bb94-b396f235f350" name="Default" comment="updated mocking code to reflect improvements from Clojure in Action">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages.clj" afterPath="$PROJECT_DIR$/src/pages.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utilities.clj" afterPath="$PROJECT_DIR$/src/utilities.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home.st" afterPath="$PROJECT_DIR$/templates/home.st" />
+      <change type="MOVED" beforePath="C:\dev\sportellos\templates\listthem.st" afterPath="$PROJECT_DIR$/templates/distance.st" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/listdistances.st" afterPath="$PROJECT_DIR$/templates/listdistances.st" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="sportello.iws" />
@@ -108,19 +108,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listdistances.st" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="listdistances.st" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/listdistances.st">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="22" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+            <state line="4" column="5" selection-start="83" selection-end="83" vertical-scroll-proportion="0.1306715">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.st" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.st" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home.st">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.261343">
+            <state line="8" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,10 +152,10 @@
         <option value="$PROJECT_DIR$/fact/google_maps.clj" />
         <option value="$PROJECT_DIR$/templates/listthem.st" />
         <option value="$PROJECT_DIR$/src/server.clj" />
-        <option value="$PROJECT_DIR$/templates/listdistances.st" />
         <option value="$PROJECT_DIR$/src/pages.clj" />
         <option value="$PROJECT_DIR$/src/utilities.clj" />
         <option value="$PROJECT_DIR$/templates/home.st" />
+        <option value="$PROJECT_DIR$/templates/listdistances.st" />
       </list>
     </option>
   </component>
@@ -701,7 +701,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/listthem.st">
+    <entry file="file://$PROJECT_DIR$/templates/distance.st">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
           <folding />
@@ -718,13 +718,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/compojure/compojure/0.5.3/compojure-0.5.3.jar!/compojure/core.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="10" selection-start="2634" selection-end="2634" vertical-scroll-proportion="0.31240657">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/listdistances.st">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="22" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -766,7 +759,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.st">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.261343">
+        <state line="8" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/listdistances.st">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="5" selection-start="83" selection-end="83" vertical-scroll-proportion="0.1306715">
           <folding />
         </state>
       </provider>

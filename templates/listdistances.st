@@ -1,3 +1,5 @@
-<h2>Distances (from Brookline,MA)</h2>
+<h2>Distances from Brookline, MA (in miles)</h2>
 
-$distances$ (in miles)
+<ul>
+$distances:distance()$
+</ul>
