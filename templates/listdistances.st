@@ -1,3 +1,3 @@
-<h2>Distances</h2>
+<h2>Distances (from Brookline,MA)</h2>
 
-$addresses$
+$distances$

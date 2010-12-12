@@ -10,3 +10,6 @@
   (.getCanonicalPath (File. ".")))
 
 (def template-dir "C:\\dev\\sportellos\\templates")
+
+(defn lines [string]
+  (seq (.split #"\r?\n" string)))
