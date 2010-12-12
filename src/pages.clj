@@ -5,13 +5,14 @@
 (defn template [filename attributes]
   (->
     (load-template template-dir filename)
-    (update-template attributes)))
+    (update-template attributes)
+    str))
 
 (defn home-page []
-  (str (template "layout" {"user" "New User"})))
+  (template "layout" {"user" "New User"}))
 
-(defn list-distances-page []
-  (str (template "listdistances" {})))
+(defn list-distances-page [addresses]
+  (template "listdistances" {"addresses" addresses}))
 
 (defn not-found-404 []
-  (str (template "not-found" {})))
+  (template "not-found" {}))
