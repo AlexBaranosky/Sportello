@@ -15,7 +15,8 @@
   (template "layout" {"user" "New User"}))
 
 (defn list-distances-page [addresses]
-  (let [dists (->> addresses lines (map #(.trim %)) (apply distances "Brookline,MA"))]
+  ;  (let [dists (->> addresses lines (map #(replace (.trim %) #" " "")) (apply distances "Brookline,MA"))]
+  (let [dists (->> addresses lines (map remove-whitespace) (apply distances "Brookline,MA"))]
     (template "listdistances" {"distances" dists})))
 
 (defn not-found-404 []
