@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0463a8fb-e001-4621-bb94-b396f235f350" name="Default" comment="updated mocking code to reflect improvements from Clojure in Action">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/listdistances.st" afterPath="$PROJECT_DIR$/templates/listdistances.st" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages.clj" afterPath="$PROJECT_DIR$/src/pages.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utilities.clj" afterPath="$PROJECT_DIR$/src/utilities.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home.st" afterPath="$PROJECT_DIR$/templates/home.st" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="sportello.iws" />
@@ -64,7 +66,7 @@
       <file leaf-file-name="pages.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="25" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,7 +75,7 @@
       <file leaf-file-name="utilities.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utilities.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="6" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+            <state line="4" column="33" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -88,6 +90,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="collection_utils.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/collection_utils.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="server.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/server.clj">
           <provider selected="true" editor-type-id="text-editor">
@@ -97,28 +108,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listdistances.st" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="listdistances.st" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/listdistances.st">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="22" selection-start="62" selection-end="62" vertical-scroll-proportion="0.05381166">
+            <state line="2" column="22" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.st" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/layout.st">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="7" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.st" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.st" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/home.st">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="41" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+            <state line="8" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.261343">
               <folding />
             </state>
           </provider>
@@ -149,11 +151,11 @@
         <option value="$PROJECT_DIR$/src/routes.clj" />
         <option value="$PROJECT_DIR$/fact/google_maps.clj" />
         <option value="$PROJECT_DIR$/templates/listthem.st" />
-        <option value="$PROJECT_DIR$/templates/home.st" />
         <option value="$PROJECT_DIR$/src/server.clj" />
-        <option value="$PROJECT_DIR$/src/utilities.clj" />
-        <option value="$PROJECT_DIR$/src/pages.clj" />
         <option value="$PROJECT_DIR$/templates/listdistances.st" />
+        <option value="$PROJECT_DIR$/src/pages.clj" />
+        <option value="$PROJECT_DIR$/src/utilities.clj" />
+        <option value="$PROJECT_DIR$/templates/home.st" />
       </list>
     </option>
   </component>
@@ -603,8 +605,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1496" height="826" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19212963" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19212963" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15705521" sideWeight="0.8352436" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39930555" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -614,12 +617,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23006135" sideWeight="0.7349537" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.8078704" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.6712963" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1724537" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TestDox" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -663,11 +665,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/partials/header.st">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.32673267" />
@@ -725,9 +722,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.st">
+    <entry file="file://$PROJECT_DIR$/templates/listdistances.st">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+        <state line="2" column="22" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -735,6 +732,20 @@
     <entry file="file://$PROJECT_DIR$/src/google_maps.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="6" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collection_utils.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -748,21 +759,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utilities.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+        <state line="4" column="33" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages.clj">
+    <entry file="file://$PROJECT_DIR$/templates/home.st">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/listdistances.st">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="22" selection-start="62" selection-end="62" vertical-scroll-proportion="0.05381166">
+        <state line="8" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.261343">
           <folding />
         </state>
       </provider>

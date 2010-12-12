@@ -3,6 +3,8 @@
   (:use google-maps)
   (:use stringtemplate-clj.core))
 
+(def template-dir "C:\\dev\\sportellos\\templates")
+
 (defn template [filename attributes]
   (->
     (load-template template-dir filename)
