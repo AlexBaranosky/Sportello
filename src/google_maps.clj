@@ -25,7 +25,7 @@
       (-> json :routes only :legs only :distance :value meters-to-miles))))
 
 (defn distances [origin & locations]
-  (remove nil? (map #(dist-in-miles origin %) locations)))
+  (->> locations (map #(dist-in-miles origin %)) (remove nil?)))
 
 (defn map-of-distances [origin & locations]
   (apply hash-map (interleave locations (apply distances origin locations))))
