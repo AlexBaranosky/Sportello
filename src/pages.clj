@@ -10,5 +10,8 @@
 (defn home-page []
   (str (template "layout" {"user" "New User"})))
 
+(defn list-distances-page []
+  (str (template "listdistances" {})))
+
 (defn not-found-404 []
   (str (template "not-found" {})))

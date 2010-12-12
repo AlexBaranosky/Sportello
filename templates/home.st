@@ -2,7 +2,7 @@
 
 <h3>Enter Your Addresses</h3>
 
-<form action="">
+<form action="/" method="post">
     <textarea id="addresses" name="addresses" style="display: block"></textarea>
-    <input type="button" value="Submit"/>
+    <input type="submit" value="Submit"/>
 </form>

@@ -3,11 +3,13 @@
     [pages :as pages]
     (compojure [route :as route])
     (ring.adapter [jetty :as jetty]))
-  (:use (compojure [core :only [defroutes GET ANY]])))
+  (:use (compojure [core :only [defroutes GET POST ANY]])))
 
 (defroutes all-routes
   (GET "/" []
     (pages/home-page))
+  (POST "/" []
+    (pages/list-distances-page))
   (ANY "/*" []
     (pages/not-found-404)))
 
