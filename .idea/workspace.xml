@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0463a8fb-e001-4621-bb94-b396f235f350" name="Default" comment="updated mocking code to reflect improvements from Clojure in Action">
-      <change type="MOVED" beforePath="C:\dev\sportellos\templates\distance.st" afterPath="$PROJECT_DIR$/templates/partials/distance.st" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fact/google_maps.clj" afterPath="$PROJECT_DIR$/fact/google_maps.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/google_maps.clj" afterPath="$PROJECT_DIR$/src/google_maps.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages.clj" afterPath="$PROJECT_DIR$/src/pages.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/listdistances.st" afterPath="$PROJECT_DIR$/templates/listdistances.st" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="sportello.iws" />
@@ -84,10 +79,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google_maps.clj" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="google_maps.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/google_maps.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="51" selection-start="528" selection-end="528" vertical-scroll-proportion="0.23348017">
+            <state line="21" column="7" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core.clj" pinned="false" current="true" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.2.0/clojure-1.2.0.jar!/clojure/core.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5277" column="10" selection-start="173885" selection-end="173885" vertical-scroll-proportion="-0.4596182">
               <folding />
             </state>
           </provider>
@@ -115,15 +119,6 @@
         <entry file="file://$PROJECT_DIR$/templates/listdistances.st">
           <provider selected="true" editor-type-id="text-editor">
             <state line="4" column="5" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="distance.st" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/partials/distance.st">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -353,10 +348,10 @@
   <component name="RunManager" selected="Clojure Script.google_maps">
     <configuration default="false" name="google_maps" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="sportello" />
-      <setting name="path" value="$PROJECT_DIR$/fact/google_maps.clj" />
+      <setting name="path" value="$PROJECT_DIR$/src/google_maps.clj" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/fact" />
+      <setting name="workDir" value="$PROJECT_DIR$/src" />
       <setting name="repl" value="false" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -761,13 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.2.0/clojure-1.2.0.jar!/clojure/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3978" column="6" selection-start="128937" selection-end="128937" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="2" selection-start="13" selection-end="44" vertical-scroll-proportion="-0.72">
@@ -805,7 +793,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/google_maps.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="51" selection-start="528" selection-end="528" vertical-scroll-proportion="0.23348017">
+        <state line="21" column="7" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.2.0/clojure-1.2.0.jar!/clojure/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5277" column="10" selection-start="173885" selection-end="173885" vertical-scroll-proportion="-0.4596182">
           <folding />
         </state>
       </provider>

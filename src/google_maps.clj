@@ -19,11 +19,10 @@
 (defn dist-in-miles [origin dest]
   (let [json (directions-json origin dest)
         status (-> json :status)]
-    (when (= status "OVER_QUERY_LIMIT")
-      (throw (RuntimeException. "Exceeded Google's query limit.")))
-    (if (= status "NOT_FOUND")
-      []
-    (-> json :routes only :legs only :distance :value meters-to-miles))))
+    (case status
+      "OVER_QUERY_LIMIT" (throw (RuntimeException. "Exceeded Google's query limit."))
+      "NOT_FOUND" []
+      (-> json :routes only :legs only :distance :value meters-to-miles))))
 
 (defn distances [origin & locations]
   (map #(dist-in-miles origin %) locations))
