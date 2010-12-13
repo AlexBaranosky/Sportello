@@ -1,6 +1,6 @@
 (ns server
   (:require
-    [pages :as pages]
+    pages
     (compojure [route :as route])
     (ring.adapter [jetty :as jetty]))
   (:use (compojure [core :only [defroutes GET POST ANY]])))

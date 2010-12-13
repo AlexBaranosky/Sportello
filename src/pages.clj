@@ -5,7 +5,7 @@
 
 (def template-dir "C:\\dev\\sportellos\\templates")
 
-(defn template [filename attributes]
+(defn- template [filename attributes]
   (->
     (load-template template-dir filename)
     (update-template attributes)

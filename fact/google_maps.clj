@@ -2,8 +2,8 @@
   (:use google-maps)
   (:use midje.sweet))
 
-;(fact "retrieves distance in miles between two locations"
-;  (dist-in-miles "NewYork,NY" "Boston,MA") => 219.061928254832)
+(fact "retrieves distance in miles between two locations"
+  (dist-in-miles "NewYork,NY" "Boston,MA") => 219.061928254832)
 
 (fact "returns nil when google can't find origin"
   (dist-in-miles "QWERTY" "Boston,MA") => nil
@@ -12,6 +12,10 @@
 (fact "returns nil when google can't find destination"
   (dist-in-miles "Boston,MA" "QWERTY") => nil
   (provided (directions-json "Boston,MA" "QWERTY") => {:status "NOT_FOUND" :routes []} ))
+
+(fact "returns nil when there are no results"
+  (dist-in-miles "Brookline,MA" "Haiti") => nil
+  (provided (directions-json "Brookline,MA" "Haiti") => {:status "ZERO_RESULTS" :routes []} ))
 
 (fact "throws exception when Google has exceeded its query limit"
   (dist-in-miles "Boston,MA" "Newport,RI") => (throws RuntimeException "Exceeded Google's query limit.")
