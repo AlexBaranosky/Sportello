@@ -5,7 +5,7 @@
 <html lang="en-US">
 <body>
     $partials/header()$
-    <div class="content">$home()$</div>
+    <section>$home()$</section>
     $partials/footer()$
 </body>
 </html>
