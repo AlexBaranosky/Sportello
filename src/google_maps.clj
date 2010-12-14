@@ -30,7 +30,7 @@
 (defn map-of-distances [origin & locations]
   (apply hash-map (interleave locations (apply distances origin locations))))
 
-(defn relative-distances
+(defn total-distances
   "Gives distance * frequency.
   frequencies are in days out of 365"
   [origin & locations-n-frequencies]

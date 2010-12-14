@@ -3,7 +3,7 @@
   (:use midje.sweet))
 
 (fact "retrieves distance in miles between two locations"
-  (dist-in-miles "NewYork,NY" "Boston,MA") => 219.061928254832)
+  (dist-in-miles "NewYork,NY" "Boston,MA") => 219.059442770064)
 
 (fact "returns nil when google can't find origin"
   (dist-in-miles "QWERTY" "Boston,MA") => nil
@@ -37,7 +37,7 @@
    (dist-in-miles .origin. "Newport,RI") => 55
    (dist-in-miles .origin. "LosAngeles,CA") => 3000))
 
-(fact "gets map of relative values of locations dependent on frequency of visits per year"
-   (relative-distances .origin. "Newport,RI" 1 "LosAngeles,CA" 2) => { "Newport,RI" 365.0, "LosAngeles,CA" 730.0 }
+(fact "gets map of total distance to locations dependent on frequency of visits per year"
+   (total-distances .origin. "Newport,RI" 1 "LosAngeles,CA" 2) => { "Newport,RI" 365.0, "LosAngeles,CA" 730.0 }
    (provided
      (dist-in-miles .origin. anything) => 365.0))

@@ -6,3 +6,6 @@
         <li><strong>$dest$:</strong> $distances.(dest)$</li>
     }$
 </ul>
+
+<h3>Total miles you need to spend per year</h3>
+$totaldistance$
