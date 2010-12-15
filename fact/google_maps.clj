@@ -41,3 +41,8 @@
    (total-distances .origin. "Newport,RI" 1 "LosAngeles,CA" 2) => { "Newport,RI" 365.0, "LosAngeles,CA" 730.0 }
    (provided
      (dist-in-miles .origin. anything) => 365.0))
+
+(fact "gets total distance to locations dependent on frequency of visits per year"
+   (total-distance .origin. "Newport,RI" 1 "LosAngeles,CA" 2) => 1095.0
+   (provided
+     (dist-in-miles .origin. anything) => 365.0))

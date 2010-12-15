@@ -5,10 +5,6 @@
   (:use template)
   (:use google-maps))
 
-(defn- blank? [s]
-  (or (= nil s)
-      (= "" (remove-whitespace s))))
-
 (defn home []
   (use-layout "home" {"user" "New User"}))
 
@@ -18,8 +14,7 @@
         addresses (map first addresses-w-freqs)
         freqs (->> addresses-w-freqs (map second) (map #(Integer/parseInt %)))
         dists (apply map-of-distances "Brookline,MA" addresses)
-        total-dists (apply total-distances "Brookline,MA" (interleave addresses freqs))
-        total-dist-per-year (reduce + (vals total-dists))]
+        total-dist-per-year (apply total-distance "Brookline,MA" (interleave addresses freqs))]
     (use-layout "list_distances" {"distances" dists "totaldistance" total-dist-per-year})))
 
 (defn not-found-404 []
