@@ -1,18 +1,7 @@
 (ns pages
   (:use utilities)
-  (:use google-maps)
-  (:use stringtemplate-clj.core))
-
-(def template-dir "C:\\dev\\sportellos\\templates")
-
-(defn- template [filename attributes]
-  (->
-    (load-template template-dir filename)
-    (update-template attributes)
-    str))
-
-(defn- use-layout [template-name & attributes]
-  (template "layout" (apply merge {"body_template" template-name} attributes)))
+  (:use template)
+  (:use google-maps))
 
 (defn home-page []
   (use-layout "home" {"user" "New User"}))
