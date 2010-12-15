@@ -11,8 +11,8 @@
     (update-template attributes)
     str))
 
-(defn- use-layout [template-name attributes]
-  (template "layout" (merge {"body_template" template-name} attributes)))
+(defn- use-layout [template-name & attributes]
+  (template "layout" (apply merge {"body_template" template-name} attributes)))
 
 (defn home-page []
   (use-layout "home" {"user" "New User"}))
@@ -24,4 +24,4 @@
     (use-layout "list_distances" {"distances" dists "totaldistance" total-dist-per-year})))
 
 (defn not-found-404 []
-  (use-layout "not_found" {}))
+  (use-layout "not_found"))
