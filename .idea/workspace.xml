@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0463a8fb-e001-4621-bb94-b396f235f350" name="Default" comment="updated mocking code to reflect improvements from Clojure in Action">
-      <change type="MOVED" beforePath="C:\dev\sportellos\templates\listdistances.st" afterPath="$PROJECT_DIR$/templates/list_distances.st" />
-      <change type="MOVED" beforePath="C:\dev\sportellos\templates\not-found.st" afterPath="$PROJECT_DIR$/templates/not_found.st" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages.clj" afterPath="$PROJECT_DIR$/src/pages.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home.st" afterPath="$PROJECT_DIR$/templates/home.st" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layout.st" afterPath="$PROJECT_DIR$/templates/layout.st" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="sportello.iws" />
@@ -69,7 +64,7 @@
       <file leaf-file-name="pages.clj" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="52" selection-start="822" selection-end="822" vertical-scroll-proportion="0.6079295">
+            <state line="22" column="5" selection-start="648" selection-end="648" vertical-scroll-proportion="0.5814978">
               <folding />
             </state>
           </provider>
@@ -96,7 +91,7 @@
       <file leaf-file-name="layout.st" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/layout.st">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="15" selection-start="111" selection-end="124" vertical-scroll-proportion="0.0">
+            <state line="10" column="7" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -761,13 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout.st">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="15" selection-start="111" selection-end="124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.st">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="7" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
@@ -789,9 +777,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.st">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="7" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="52" selection-start="822" selection-end="822" vertical-scroll-proportion="0.6079295">
+        <state line="22" column="5" selection-start="648" selection-end="648" vertical-scroll-proportion="0.5814978">
           <folding />
         </state>
       </provider>

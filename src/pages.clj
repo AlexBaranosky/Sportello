@@ -11,14 +11,17 @@
     (update-template attributes)
     str))
 
+(defn- use-layout [template-name attributes]
+  (template "layout" (merge {"body_template" template-name} attributes)))
+
 (defn home-page []
-  (template "layout" {"body_template" "home" "user" "New User"}))
+  (use-layout "home" {"user" "New User"}))
 
 (defn list-distances-page [addresses-w-whitespace]
   (let [addresses (->> addresses-w-whitespace lines (map remove-whitespace))
-        dists  (apply map-of-distances "Brookline,MA" addresses)
+        dists (apply map-of-distances "Brookline,MA" addresses)
         total-dist-per-year (total-distances "Brookline,MA" (first addresses) 500)]
-    (template "layout" {"body_template" "list_distances" "distances" dists "totaldistance" total-dist-per-year})))
+    (use-layout "list_distances" {"distances" dists "totaldistance" total-dist-per-year})))
 
 (defn not-found-404 []
-  (template "layout" {"body_template" "not_found"}))
+  (use-layout "not_found" {}))
