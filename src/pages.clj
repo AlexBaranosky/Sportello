@@ -15,15 +15,11 @@
 (defn list-distances [addresses-w-whitespace]
   (let [lines (->> addresses-w-whitespace lines (map remove-whitespace))
         addresses-w-freqs (map #(.split % ":" 2) lines)
-        noop (println addresses-w-freqs)
-        noop (println (count addresses-w-freqs))
-        noop (println (count (first addresses-w-freqs)))
-        noop (println (first (first addresses-w-freqs)))
-        noop (println (first (second addresses-w-freqs)))
         addresses (map first addresses-w-freqs)
         freqs (->> addresses-w-freqs (map second) (map #(Integer/parseInt %)))
         dists (apply map-of-distances "Brookline,MA" addresses)
-        total-dist-per-year (apply total-distances "Brookline,MA" (interleave addresses freqs))]
+        total-dists (apply total-distances "Brookline,MA" (interleave addresses freqs))
+        total-dist-per-year (reduce + (vals total-dists))]
     (use-layout "list_distances" {"distances" dists "totaldistance" total-dist-per-year})))
 
 (defn not-found-404 []
