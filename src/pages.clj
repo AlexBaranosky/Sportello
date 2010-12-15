@@ -3,10 +3,10 @@
   (:use template)
   (:use google-maps))
 
-(defn home-page []
+(defn home []
   (use-layout "home" {"user" "New User"}))
 
-(defn list-distances-page [addresses-w-whitespace]
+(defn list-distances [addresses-w-whitespace]
   (let [addresses (->> addresses-w-whitespace lines (map remove-whitespace))
         dists (apply map-of-distances "Brookline,MA" addresses)
         total-dist-per-year (total-distances "Brookline,MA" (first addresses) 500)]

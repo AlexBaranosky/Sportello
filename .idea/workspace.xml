@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0463a8fb-e001-4621-bb94-b396f235f350" name="Default" comment="updated mocking code to reflect improvements from Clojure in Action">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/template.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages.clj" afterPath="$PROJECT_DIR$/src/pages.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server.clj" afterPath="$PROJECT_DIR$/src/server.clj" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="sportello.iws" />
@@ -66,7 +65,7 @@
       <file leaf-file-name="pages.clj" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="23" selection-start="548" selection-end="548" vertical-scroll-proportion="0.39647576">
+            <state line="15" column="27" selection-start="542" selection-end="542" vertical-scroll-proportion="0.39647576">
               <folding />
             </state>
           </provider>
@@ -84,7 +83,7 @@
       <file leaf-file-name="server.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/server.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="13" column="20" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -141,7 +140,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/templates/distance.st" />
-        <option value="$PROJECT_DIR$/src/server.clj" />
         <option value="$PROJECT_DIR$/templates/partials/destinations.st" />
         <option value="$PROJECT_DIR$/templates/partials/distance.st" />
         <option value="$PROJECT_DIR$/templates/partials/lsititem.st" />
@@ -155,6 +153,7 @@
         <option value="$PROJECT_DIR$/templates/listdistances.st" />
         <option value="$PROJECT_DIR$/src/utilities.clj" />
         <option value="$PROJECT_DIR$/src/template.clj" />
+        <option value="$PROJECT_DIR$/src/server.clj" />
         <option value="$PROJECT_DIR$/src/pages.clj" />
       </list>
     </option>
@@ -819,13 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/template.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="32" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
@@ -833,9 +825,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="20" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="548" selection-end="548" vertical-scroll-proportion="0.39647576">
+        <state line="15" column="27" selection-start="542" selection-end="542" vertical-scroll-proportion="0.39647576">
           <folding />
         </state>
       </provider>
