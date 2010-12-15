@@ -5,7 +5,7 @@
 <html lang="en-US">
 <body>
     $partials/header()$
-    <section>$home()$</section>
+    <section>$(body_template)()$</section>
     $partials/footer()$
 </body>
 </html>

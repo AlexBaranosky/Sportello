@@ -12,13 +12,13 @@
     str))
 
 (defn home-page []
-  (template "layout" {"user" "New User"}))
+  (template "layout" {"body_template" "home" "user" "New User"}))
 
 (defn list-distances-page [addresses-w-whitespace]
   (let [addresses (->> addresses-w-whitespace lines (map remove-whitespace))
         dists  (apply map-of-distances "Brookline,MA" addresses)
         total-dist-per-year (total-distances "Brookline,MA" (first addresses) 500)]
-    (template "listdistances" {"distances" dists "totaldistance" total-dist-per-year})))
+    (template "layout" {"body_template" "list_distances" "distances" dists "totaldistance" total-dist-per-year})))
 
 (defn not-found-404 []
-  (template "not-found" {}))
+  (template "layout" {"body_template" "not_found"}))
