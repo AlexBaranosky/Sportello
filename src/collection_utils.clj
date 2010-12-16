@@ -17,3 +17,6 @@
   (into {}
     (for [k (keys (first maps))]
       [k (apply f (map #(get % k) maps))])))
+
+(defn unzip [list-of-pairs]
+  [(map first list-of-pairs) (map second list-of-pairs)])

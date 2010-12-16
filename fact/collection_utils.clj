@@ -47,3 +47,6 @@
   (values-of :distance [{:goat "al" :distance 35}
                         {:goat "paula" :distance 25 :other {:notdistance 99 :another {:distance nil}}}])
   => [35, 25, nil])
+
+(fact "unzips a list of pairs into two lists of items"
+  (unzip [[1 2] [3 4] [5 6] [7 8]]) => [[1 3 5 7] [2 4 6 8]])
