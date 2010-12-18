@@ -1,13 +1,5 @@
 (ns collection-utils)
 
-(defn values-of [k coll]
-  (if-let [s (try (seq coll) (catch IllegalArgumentException _ nil))]
-    (let [not-found (Object.)
-          v (if (associative? coll) (get coll k not-found) not-found)
-          v (if-not (= v not-found) [v])
-          vs (map #(values-of k %) s)]
-      (apply concat v vs))))
-
 (defn only [coll]
   (if (= 1 (count coll))
     (first coll)
@@ -18,5 +10,5 @@
     (for [k (keys (first maps))]
       [k (apply f (map #(get % k) maps))])))
 
-(defn unzip [list-of-pairs]
-  [(map first list-of-pairs) (map second list-of-pairs)])
+(defn zip [list-of-tuples]
+  (apply map list list-of-tuples))

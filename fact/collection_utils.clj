@@ -24,32 +24,11 @@
 (fact "throws when more than one item"
   (only [1 2]) => (throws RuntimeException "should have precisely one item, but had: 2"))
 
-(fact "gets values of distance for nested nested hash map"
-  (values-of :distance {:goat "al" :distance 35})
-  => [35])
+(fact "zips a list of pairs into two lists of items"
+  (zip [[1 2] [3 4] [5 6] [7 8]]) => [[1 3 5 7] [2 4 6 8]])
 
-(fact "gets values of distance for nested hash map with two children"
-  (values-of :distance [{:goat "al" :distance 35}
-                        {:goat "paula" :distance 25}])
-  => [35, 25])
+(fact "zips a list of tuples into a list for each element in the original lists' tuples"
+  (zip [[1 2 3] [4 5 6] [7 8 9] [10 11 12]]) => [[1 4 7 10] [2 5 8 11] [3 6 9 12]])
 
-(fact "gets values of distance for doubly nested hash map"
-  (values-of :distance [{:goat "al" :distance 35}
-                        {:goat "paula" :distance 25 :other {:distance 99}}])
-  => [35, 25, 99])
-
-(fact "gets values of distance for triply nested hash map"
-  (values-of :distance [{:goat "al" :distance 35}
-                        {:goat "paula" :distance 25 :other {:distance 99 :another {:distance 77}}}])
-  => [35, 25, 99, 77])
-
-(fact "includes nils in results"
-  (values-of :distance [{:goat "al" :distance 35}
-                        {:goat "paula" :distance 25 :other {:notdistance 99 :another {:distance nil}}}])
-  => [35, 25, nil])
-
-(fact "unzips a list of pairs into two lists of items"
-  (unzip [[1 2] [3 4] [5 6] [7 8]]) => [[1 3 5 7] [2 4 6 8]])
-
-(fact "unzips a list of triples into three lists of items"
-  (unzip [[1 2 3] [4 5 6] [7 8 9] [10 11 12]]) => [[1 4 7 10] [2 5 8 11] [3 6 9 12]])
+(fact "if I zip then zip again, I get the original back"
+  (-> [[1 2] [3 4] [5 6] [7 8]] zip zip) => [[1 2] [3 4] [5 6] [7 8]])

@@ -13,5 +13,5 @@
   (->> text
        split-lines
        (map remove-whitespace)
-       (map #(.split % divider 2))
-       unzip))
+       (map #(.split % divider))
+       zip))
