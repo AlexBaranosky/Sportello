@@ -9,9 +9,8 @@
 (defn remove-whitespace [s]
   (str/replace s #"\s" ""))
 
-(defn split-into-columns-by-divider [text divider]
+(defn split-into-columns [text divider]
   (->> text
        split-lines
-       (map remove-whitespace)
        (map #(.split % divider))
        zip))

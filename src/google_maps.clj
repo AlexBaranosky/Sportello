@@ -1,5 +1,6 @@
 (ns google-maps
   (:use collection-utils)
+  (:use string-utils)
   (:use [clojure.contrib.http.agent :only [string http-agent]])
   (:use clojure.contrib.json))
 
@@ -27,9 +28,10 @@
 (defn distances [origin & locations]
   (->> locations (map #(dist-in-miles origin %)) (remove nil?)))
 
-(defn map-of-distances [origin & locations]
-  (let [dists (apply distances origin locations)]
-    (apply hash-map (interleave locations dists))))
+(defn map-of-distances [origin & locations-w-whitespace]
+  (let [locations (map remove-whitespace locations-w-whitespace)
+        dists (apply distances origin locations)]
+    (apply hash-map (interleave locations-w-whitespace dists))))
 
 (defn total-distances
   "Gives distance * frequency.

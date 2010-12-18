@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0463a8fb-e001-4621-bb94-b396f235f350" name="Default" comment="updated mocking code to reflect improvements from Clojure in Action">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fact/google_maps.clj" afterPath="$PROJECT_DIR$/fact/google_maps.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fact/string_utils.clj" afterPath="$PROJECT_DIR$/fact/string_utils.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/google_maps.clj" afterPath="$PROJECT_DIR$/src/google_maps.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages.clj" afterPath="$PROJECT_DIR$/src/pages.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/string_utils.clj" afterPath="$PROJECT_DIR$/src/string_utils.clj" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="sportello.iws" />
@@ -65,7 +69,16 @@
       <file leaf-file-name="pages.clj" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="27" selection-start="762" selection-end="762" vertical-scroll-proportion="0.47577092">
+            <state line="12" column="18" selection-start="398" selection-end="398" vertical-scroll-proportion="0.3171806">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="string_utils.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fact/string_utils.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="3" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,7 +87,7 @@
       <file leaf-file-name="string_utils.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/string_utils.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="6" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
+            <state line="15" column="12" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,7 +105,7 @@
       <file leaf-file-name="google_maps.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/google_maps.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="64" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
+            <state line="43" column="57" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,19 +120,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="string_utils.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fact/string_utils.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="23" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="google_maps.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fact/google_maps.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="63" vertical-scroll-proportion="0.0">
+            <state line="40" column="12" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,18 +146,18 @@
         <option value="$PROJECT_DIR$/templates/listdistances.st" />
         <option value="$PROJECT_DIR$/src/template.clj" />
         <option value="$PROJECT_DIR$/project.clj" />
-        <option value="$PROJECT_DIR$/fact/google_maps.clj" />
         <option value="$PROJECT_DIR$/templates/list_distances.st" />
         <option value="$PROJECT_DIR$/templates/partials/header.st" />
         <option value="$PROJECT_DIR$/src/server.clj" />
-        <option value="$PROJECT_DIR$/src/google_maps.clj" />
         <option value="$PROJECT_DIR$/src/presentation.clj" />
         <option value="$PROJECT_DIR$/templates/home.st" />
         <option value="$PROJECT_DIR$/src/utilities.clj" />
-        <option value="$PROJECT_DIR$/src/string_utils.clj" />
         <option value="$PROJECT_DIR$/src/collection_utils.clj" />
         <option value="$PROJECT_DIR$/fact/collection_utils.clj" />
+        <option value="$PROJECT_DIR$/fact/google_maps.clj" />
+        <option value="$PROJECT_DIR$/src/google_maps.clj" />
         <option value="$PROJECT_DIR$/fact/string_utils.clj" />
+        <option value="$PROJECT_DIR$/src/string_utils.clj" />
         <option value="$PROJECT_DIR$/src/pages.clj" />
       </list>
     </option>
@@ -342,7 +346,7 @@
       <recent name="C:\dev\sportellos\src\facts" />
     </key>
   </component>
-  <component name="RunManager" selected="Clojure Script.collection_utils">
+  <component name="RunManager" selected="Clojure Script.string_utils">
     <configuration default="false" name="pages" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="sportello" />
       <setting name="path" value="$PROJECT_DIR$/src/pages.clj" />
@@ -659,10 +663,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="1" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17824075" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17824075" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15705521" sideWeight="0.8352436" order="6" side_tool="false" content_ui="tabs" />
@@ -791,23 +795,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/string_utils.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fact/google_maps.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="63" vertical-scroll-proportion="0.0">
+        <state line="40" column="12" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fact/string_utils.clj">
+    <entry file="file://$PROJECT_DIR$/src/google_maps.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0">
+        <state line="43" column="57" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -819,16 +816,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/google_maps.clj">
+    <entry file="file://$PROJECT_DIR$/src/string_utils.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="64" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
+        <state line="15" column="12" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fact/string_utils.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="3" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="27" selection-start="762" selection-end="762" vertical-scroll-proportion="0.47577092">
+        <state line="12" column="18" selection-start="398" selection-end="398" vertical-scroll-proportion="0.3171806">
           <folding />
         </state>
       </provider>

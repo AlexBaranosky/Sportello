@@ -22,17 +22,23 @@
   (provided (directions-json "Boston,MA" "Newport,RI") => {:status "OVER_QUERY_LIMIT" :routes []} ))
 
 (fact "retrieves distances in miles to multiple locations from origin"
- (distances "Boston,MA" "Albany,NY" "LosAngeles,CA") => (in-any-order [3.0, 2.0])
- (provided (dist-in-miles "Boston,MA" "Albany,NY") => 2.0)
- (provided (dist-in-miles "Boston,MA" "LosAngeles,CA") => 3.0))
+(distances "Boston,MA" "Albany,NY" "LosAngeles,CA") => (in-any-order [3.0, 2.0])
+(provided (dist-in-miles "Boston,MA" "Albany,NY") => 2.0)
+(provided (dist-in-miles "Boston,MA" "LosAngeles,CA") => 3.0))
 
 (fact "filters out unfound locations when retrieving distances in miles to multiple locations from origin"
- (distances "Boston,MA" "QWERTY" "LosAngeles,CA") => [3.0]
- (provided (dist-in-miles "Boston,MA" "QWERTY") => nil)
- (provided (dist-in-miles "Boston,MA" "LosAngeles,CA") => 3.0))
+(distances "Boston,MA" "QWERTY" "LosAngeles,CA") => [3.0]
+(provided (dist-in-miles "Boston,MA" "QWERTY") => nil)
+(provided (dist-in-miles "Boston,MA" "LosAngeles,CA") => 3.0))
 
 (fact "converts distances from origin to a map keyed by destination"
- (map-of-distances .origin. "Newport,RI", "LosAngeles,CA") => { "Newport,RI" 55, "LosAngeles,CA" 3000 }
+(map-of-distances .origin. "Newport,RI", "LosAngeles,CA") => { "Newport,RI" 55, "LosAngeles,CA" 3000 }
+(provided
+   (dist-in-miles .origin. "Newport,RI") => 55
+   (dist-in-miles .origin. "LosAngeles,CA") => 3000))
+
+(fact "converts distances from origin to a map keyed by destination, retaing spaces in destinations"
+ (map-of-distances .origin. "Newport, RI", "Los Angeles, CA") => { "Newport, RI" 55, "Los Angeles, CA" 3000 }
  (provided
    (dist-in-miles .origin. "Newport,RI") => 55
    (dist-in-miles .origin. "LosAngeles,CA") => 3000))
