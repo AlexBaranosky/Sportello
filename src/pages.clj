@@ -13,7 +13,7 @@
         freqs (map #(Integer/parseInt %) freq-strings)
         dists (apply map-of-distances origin addresses)
         total-dist-per-year (apply total-distance origin (interleave addresses freqs))]
-    (use-layout "list_distances" {"origin" origin "distances" dists "totaldistance" total-dist-per-year})))
+    (use-layout "list_distances" {"origin" origin-w-whitespace "distances" dists "totaldistance" total-dist-per-year})))
 
 (defn not-found-404 []
   (use-layout "not_found"))
