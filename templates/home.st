@@ -7,9 +7,11 @@
     <p>Example:</p>
 
     <blockquote>
-        <p><em>Origin: Brookline, MA</em></p>
+        <p>Origin-</br>
+           <em>Brookline, MA</em></p>
 
-        <p><em>Boston, MA : 200</br>
+        <p>Destinations-</br>
+           <em>Boston, MA : 200</br>
                New York, NY : 4</em></p>
     </blockquote>
 </section>

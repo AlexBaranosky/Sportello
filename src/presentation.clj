@@ -25,6 +25,9 @@
 ;(def destinations ["NewYork,NY" "LosAngeles,CA" "Miami,FL" "Detroit,MI" "Austin,Tx" "MexicoCity,Mexico" "Toronto,Canada" "Buffalo,Ny" "Newport,RI"
 ;                   "NewYork,NY" "LosAngeles,CA" "Miami,FL" "Detroit,MI" "Austin,Tx" "MexicoCity,Mexico" "Toronto,Canada" "Buffalo,Ny" "Newport,RI"])
 ;
+;(defn pdistances [origin & locations]
+;  (->> locations (pmap #(dist-in-miles origin %)) (remove nil?)))
+;
 ;(def pdistances-to-boston
 ;  (partial pdistances "Boston,MA"))
 ;

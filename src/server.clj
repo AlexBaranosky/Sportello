@@ -8,7 +8,7 @@
 (defroutes all-routes
   (GET "/" []
     (pages/home))
-  (POST "/"  {{origin "origin" addresses "addresses"} :form-params} ;;  :keys  ???
+  (POST "/"  {{:strs [origin addresses]} :form-params}
     (pages/list-distances origin addresses))
   (ANY "/*" []
     (pages/not-found-404)))

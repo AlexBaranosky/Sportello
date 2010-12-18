@@ -2,7 +2,7 @@
   (:require [clojure.string :as str])
   (:import (java.io File)))
 
-(defn lines [string]
+(defn split-lines [string]
   (seq (.split #"\r?\n" string)))
 
 (defn remove-whitespace [s]

@@ -27,9 +27,6 @@
 (defn distances [origin & locations]
   (->> locations (map #(dist-in-miles origin %)) (remove nil?)))
 
-(defn pdistances [origin & locations]
-  (->> locations (pmap #(dist-in-miles origin %)) (remove nil?)))
-
 (defn map-of-distances [origin & locations]
   (let [dists (apply distances origin locations)]
     (apply hash-map (interleave locations dists))))

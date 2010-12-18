@@ -6,14 +6,14 @@
   (:use google-maps))
 
 (defn home []
-  (use-layout "home" {"user" "New User"}))
+  (use-layout "home"))
 
-(defn- split-into-addresses-and-freqs [addresses-w-whitespace]
-  (->> addresses-w-whitespace lines (map remove-whitespace) (map #(.split % ":" 2)) unzip))
+(defn- split-into-two-columns-by-divider [text divider]
+  (->> text split-lines (map remove-whitespace) (map #(.split % divider 2)) unzip))
 
-(defn list-distances [origin-w-whitespace addresses-w-whitespace]
+(defn list-distances [origin-w-whitespace addresses-n-freqs-w-whitespace]
   (let [origin (remove-whitespace origin-w-whitespace)
-        [addresses freq-strings] (split-into-addresses-and-freqs addresses-w-whitespace)
+        [addresses freq-strings] (split-into-two-columns-by-divider addresses-n-freqs-w-whitespace ":")
         freqs (map #(Integer/parseInt %) freq-strings)
         dists (apply map-of-distances origin addresses)
         total-dist-per-year (apply total-distance origin (interleave addresses freqs))]
