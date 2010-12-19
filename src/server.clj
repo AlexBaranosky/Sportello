@@ -8,9 +8,9 @@
 (defroutes all-routes
   (GET "/" []
     (pages/home))
-  (POST "/"  {{:strs [origin addresses]} :form-params}
+  (POST "/" {{:strs [origin addresses]} :form-params}
     (pages/list-distances origin addresses))
-  (ANY "/*" []
+  (ANY "*" []
     (pages/not-found-404)))
 
 (jetty/run-jetty all-routes {:port 8080})

@@ -2,20 +2,20 @@
   (:use midje.sweet)
   (:use collection-utils))
 
-(fact "maps keys of two maps using given function"
-  (fmap #(+ %1 %1 %2) {:a 1 :b 2} {:a 3 :b 4})
+(fact "maps values of two maps using given function"
+  (mapmap #(+ %1 %1 %2) {:a 1 :b 2} {:a 3 :b 4})
   => {:a 5 :b 8})
 
-(fact "maps keys of two maps using given function"
-  (fmap #(+ %1 %1 %2) {:a 1 :b 2} {:a 3 :b 4})
+(fact "maps values of two maps using given function"
+  (mapmap #(+ %1 %1 %2) {:a 1 :b 2} {:a 3 :b 4})
   => {:a 5 :b 8})
 
-(fact "maps keys of three maps using given function"
-  (fmap #(+ %1 %2 %3) {:a 1 :b 2} {:a 3 :b 4} {:a 5 :b 6})
+(fact "maps values of three maps using given function"
+  (mapmap #(+ %1 %2 %3) {:a 1 :b 2} {:a 3 :b 4} {:a 5 :b 6})
   => {:a 9 :b 12})
 
-(fact "maps keys of any number of maps using given function"
-  (fmap #(+ %1 %2 %3 %4) {:a 1 :b 2} {:a 3 :b 4} {:a 5 :b 6} {:a 7 :b 8})
+(fact "maps values of any number of maps using given function"
+  (mapmap #(+ %1 %2 %3 %4) {:a 1 :b 2} {:a 3 :b 4} {:a 5 :b 6} {:a 7 :b 8})
   => {:a 16 :b 20})
 
 (fact "throws when no items"

@@ -5,5 +5,5 @@
     }$
 </ul>
 
-<h2>Total miles you'll need to spend per year</h2>
+<h2>Total miles you'll travel per year</h2>
 $totaldistance$
