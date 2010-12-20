@@ -1,7 +1,6 @@
 (ns string-utils
   (:use collection-utils)
-  (:require [clojure.string :as str])
-  (:import (java.io File)))
+  (:require [clojure.string :as str]))
 
 (defn split-lines [string]
   (seq (.split #"\r?\n" string)))

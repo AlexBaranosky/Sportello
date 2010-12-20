@@ -37,9 +37,6 @@
   "Gives distance * frequency.
   frequencies are in days out of 365"
   [origin & locations-n-frequencies]
-  {:pre [(even? (count locations-n-frequencies)),
-         (every? string? (map first (partition 2 locations-n-frequencies)))
-         (every? number? (map second (partition 2 locations-n-frequencies)))]}
   (let [locations (take-nth 2 locations-n-frequencies)
         loc-w-dists (apply map-of-distances origin locations)
         loc-w-freqs (apply hash-map locations-n-frequencies)]
