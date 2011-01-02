@@ -1,7 +1,7 @@
 (ns template
   (:use stringtemplate-clj.core))
 
-(def template-dir "C:\\dev\\sportellos\\templates")
+(def template-dir "C:\\dev\\Sportello\\templates")
 
 (defn- template [filename attributes]
   (->
