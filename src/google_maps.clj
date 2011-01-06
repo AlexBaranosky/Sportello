@@ -40,7 +40,7 @@
   (let [locations (take-nth 2 locations-n-frequencies)
         loc-w-dists (apply map-of-distances origin locations)
         loc-w-freqs (apply hash-map locations-n-frequencies)]
-    (mapmap * loc-w-dists loc-w-freqs)))
+    (map-by-key * loc-w-dists loc-w-freqs)))
 
 (defn total-distance [origin & locations-n-frequencies]
   (let [total-dists (apply total-distances origin locations-n-frequencies)]
