@@ -10,5 +10,7 @@
     (for [k (keys (first maps))]
       [k (apply f (map #(get % k) maps))])))
 
-(defn zip [list-of-tuples]
-  (apply map list list-of-tuples))
+;(defn zip [seq-of-seqs]
+;  (apply map list seq-of-seqs))
+
+(def zip (partial apply (partial map list)))
