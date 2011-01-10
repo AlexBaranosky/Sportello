@@ -13,4 +13,5 @@
   (ANY "*" []
     (pages/not-found-404)))
 
-(jetty/run-jetty all-routes {:port 8080})
+(defn boot [] 
+  (jetty/run-jetty #'all-routes {:port 8080}))
