@@ -10,5 +10,4 @@
                  [org.clojars.sids/congomongo "0.1.3-SNAPSHOT"]
                  [ring/ring-jetty-adapter "0.3.4"]]
   :dev-dependencies [[lein-ring "0.2.4"]]
-  :ring {:handler server/all-routes}
-)
+  :ring {:handler server/all-routes})
