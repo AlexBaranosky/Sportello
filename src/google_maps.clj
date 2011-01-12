@@ -15,10 +15,6 @@
 (defn directions-json [origin dest]
   (let [request-url (directions-url (remove-whitespace origin) (remove-whitespace dest))
         response (string (http-agent request-url))]
-    (println origin)
-    (println dest)
-    (println "BOO!")
-    (println response)
     (read-json response true)))
 
 (defn dist-in-miles [origin dest]
