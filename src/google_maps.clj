@@ -13,8 +13,12 @@
   (format "http://maps.googleapis.com/maps/api/directions/json?origin=%s&destination=%s&sensor=false" origin dest))
 
 (defn directions-json [origin dest]
-  (let [request-url (directions-url origin dest)
+  (let [request-url (directions-url (remove-whitespace origin) (remove-whitespace dest))
         response (string (http-agent request-url))]
+    (println origin)
+    (println dest)
+    (println "BOO!")
+    (println response)
     (read-json response true)))
 
 (defn dist-in-miles [origin dest]
@@ -28,10 +32,9 @@
 (defn distances [origin & locations]
   (->> locations (map #(dist-in-miles origin %)) (remove nil?)))
 
-(defn map-of-distances [origin & locations-w-whitespace]
-  (let [locations (map remove-whitespace locations-w-whitespace)
-        dists (apply distances origin locations)]
-    (apply hash-map (interleave locations-w-whitespace dists))))
+(defn map-of-distances [origin & locations]
+  (let [dists (apply distances origin locations)]
+    (zipmap locations dists)))
 
 (defn scaled-distance [origin location freq]
   (* freq (dist-in-miles origin location)))

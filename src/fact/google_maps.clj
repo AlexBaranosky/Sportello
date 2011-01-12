@@ -5,6 +5,9 @@
 (fact "retrieves distance in miles between two locations"
   (dist-in-miles "NewYork,NY" "Boston,MA") => 219.059442770064)
 
+(fact "retrieves distance in miles between two locations, works with locations that have spaces"
+  (dist-in-miles "NewYork, NY" "Boston, MA ") => 219.059442770064)
+
 (fact "returns nil when google can't find origin"
   (dist-in-miles "NON_EXISTANT_PLACE" "Boston,MA") => nil
   (provided (directions-json "NON_EXISTANT_PLACE" "Boston,MA") => {:status "NOT_FOUND" :routes []}))
@@ -32,16 +35,16 @@
   (provided (dist-in-miles "Boston,MA" "LosAngeles,CA") => 3.0))
 
 (fact "converts distances from origin to a map keyed by destination"
-  (map-of-distances .origin. "Newport,RI", "LosAngeles,CA") => {"Newport,RI" 55, "LosAngeles,CA" 3000}
+  (map-of-distances .origin. "Newport,RI", "LosAngeles,CA") => {"Newport,RI" 55.0, "LosAngeles,CA" 3000.0}
   (provided
     (dist-in-miles .origin. "Newport,RI") => 55.0
     (dist-in-miles .origin. "LosAngeles,CA") => 3000.0))
 
 (fact "converts distances from origin to a map keyed by destination, retaing spaces in destinations"
-  (map-of-distances .origin. "Newport, RI", "Los Angeles, CA") => {"Newport, RI" 55, "Los Angeles, CA" 3000}
+  (map-of-distances .origin. "Newport, RI", "Los Angeles, CA") => {"Newport, RI" 55.0, "Los Angeles, CA" 3000.0}
   (provided
-    (dist-in-miles .origin. "Newport,RI") => 55.0
-    (dist-in-miles .origin. "LosAngeles,CA") => 3000.0))
+    (dist-in-miles .origin. "Newport, RI") => 55.0
+    (dist-in-miles .origin. "Los Angeles, CA") => 3000.0))
 
 (fact "scales the distance by multiplying it by frequency"
   (scaled-distance .origin. "Newport,RI" 3) => 450.
