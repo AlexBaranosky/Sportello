@@ -47,7 +47,7 @@
     (dist-in-miles .origin. "Los Angeles, CA") => 3000.0))
 
 (fact "scales the distance by multiplying it by frequency"
-  (scaled-distance .origin. "Newport,RI" 3) => 450.
+  (scaled-distance .origin. ["Newport,RI" 3]) => 450.
   (provided (dist-in-miles .origin. "Newport,RI") => 150.000)) 
 
 (fact "gets total distance to locations dependent on frequency of visits per year"
