@@ -36,10 +36,9 @@
   (* freq (dist-in-miles origin location)))
 
 (defn total-distance [origin & locations+frequencies]
-  (let [sum-scaled-dists (fn [acc loc+freq] (+ acc (scaled-distance origin loc+freq)))]
-    (reduce sum-scaled-dists 0 (partition 2 locations+frequencies))))
+  (reduce #(+ %1 (scaled-distance origin %2)) 0 (partition 2 locations+frequencies)))
 
 (defn map-of-total-distances [origin & locations+frequencies]
   (let [locations (take-nth 2 locations+frequencies)
-        scaled-distances (map (fn [loc+freq] (scaled-distance origin loc+freq)) (partition 2 locations+frequencies))]
+        scaled-distances (map (partial scaled-distance origin) (partition 2 locations+frequencies))]
     (zipmap locations scaled-distances)))
