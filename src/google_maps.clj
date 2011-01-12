@@ -33,7 +33,7 @@
         dists (apply distances origin locations)]
     (apply hash-map (interleave locations-w-whitespace dists))))
 
-(defn total-distances
+(defn map-of-total-distances
   "Gives distance * frequency.
   frequencies are in days out of 365"
   [origin & locations-n-frequencies]
@@ -43,5 +43,5 @@
     (map-by-key * loc-w-dists loc-w-freqs)))
 
 (defn total-distance [origin & locations-n-frequencies]
-  (let [total-dists (apply total-distances origin locations-n-frequencies)]
+  (let [total-dists (apply map-of-total-distances origin locations-n-frequencies)]
     (reduce + (vals total-dists))))
