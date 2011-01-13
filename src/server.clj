@@ -10,7 +10,7 @@
     (pages/home))
   (POST "/" [origin addresses]
     (pages/list-distances origin addresses))
-  (ANY "*" []
+  (route/not-found
     (pages/not-found-404)))
 
 (defn boot [] 
