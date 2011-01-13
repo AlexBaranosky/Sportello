@@ -2,7 +2,8 @@
   (:use collection-utils)
   (:use string-utils)
   (:use [clojure.contrib.http.agent :only [string http-agent]])
-  (:use clojure.contrib.json))
+  (:use clojure.contrib.json)
+  (:use clojure.contrib.def))
 
 (def miles-per-meter 0.000621371192)
 
@@ -17,13 +18,15 @@
         response (string (http-agent request-url))]
     (read-json response true)))
 
-(defn dist-in-miles [origin dest]
+(defn dist-in-miles-uncached [origin dest]
   (let [json (directions-json origin dest)
         status (-> json :status)]
     (case status
       "OVER_QUERY_LIMIT" (throw (RuntimeException. "Exceeded Google's query limit."))
       ("NOT_FOUND" "ZERO_RESULTS") nil
       (-> json :routes only :legs only :distance :value meters-to-miles))))
+
+(def dist-in-miles (memoize dist-in-miles-uncached))
 
 (defn distances [origin & locations]
   (->> locations (map #(dist-in-miles origin %)) (remove nil?)))

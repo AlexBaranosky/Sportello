@@ -5,6 +5,10 @@
 (fact "retrieves distance in miles between two locations"
   (dist-in-miles "NewYork,NY" "Boston,MA") => 219.059442770064)
 
+(fact "Second attempt to get distance uses the cache"
+  (expect (dist-in-miles "NewYork,NY" "Boston,MA") => 219.059442770064
+    (not-called dist-in-miles-uncached)))
+
 (fact "retrieves distance in miles between two locations, works with locations that have spaces"
   (dist-in-miles "NewYork, NY" "Boston, MA ") => 219.059442770064)
 
@@ -47,7 +51,7 @@
     (dist-in-miles .origin. "Los Angeles, CA") => 3000.0))
 
 (fact "scales the distance by multiplying it by frequency"
-  (scaled-distance .origin. ["Newport,RI" 3]) => 450.
+  (scaled-distance .origin. ["Newport,RI" 3]) => 450.0
   (provided (dist-in-miles .origin. "Newport,RI") => 150.000)) 
 
 (fact "gets total distance to locations dependent on frequency of visits per year"
