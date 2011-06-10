@@ -1,7 +1,17 @@
 (ns template
-  (:use stringtemplate-clj.core))
+  (:use stringtemplate-clj.core)
+  (:require fs))
 
-(def template-dir "/home/alex/proj/Sportello/templates")
+(defn but-last [s n]
+   (if (> n (.length s))
+       ""
+      (.substring s 0 (- (.length s) n))))    
+  
+(def working-directory (but-last (fs/cwd) 1))  
+  
+(def template-dir (str working-directory "\\templates"))
+
+(println template-dir)
 
 (defn- template [filename attributes]
   (->

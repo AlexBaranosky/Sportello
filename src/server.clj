@@ -15,3 +15,10 @@
 
 (defn boot [] 
   (jetty/run-jetty #'all-routes {:port 8080}))
+
+(defn -main []
+  (boot))
+  
+  
+  ;(let [port (Integer/parseInt (get (System/getenv) "PORT" "8080"))]
+    ;(jetty/run-jetty #'all-routes {:port 8080}))

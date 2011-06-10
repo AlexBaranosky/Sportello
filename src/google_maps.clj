@@ -5,13 +5,11 @@
   (:use clojure.contrib.json)
   (:use clojure.contrib.def))
 
-(def miles-per-meter 0.000621371192)
+(def ^{:private true} miles-per-meter 0.000621371192)
 
-(defn meters-to-miles [meters]
-  (* meters miles-per-meter))
+(def ^{:private true} meters-to-miles (partial * miles-per-meter))
 
-(defn- directions-url [origin dest]
-  (format "http://maps.googleapis.com/maps/api/directions/json?origin=%s&destination=%s&sensor=false" origin dest))
+(def ^{:private true} directions-url (partial format "http://maps.googleapis.com/maps/api/directions/json?origin=%s&destination=%s&sensor=false"))
 
 (defn directions-json [origin dest]
   (let [request-url (directions-url (remove-whitespace origin) (remove-whitespace dest))
